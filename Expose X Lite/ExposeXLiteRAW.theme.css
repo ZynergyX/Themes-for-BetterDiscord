@@ -1,0 +1,269 @@
+//META{"name":"Expose X Lite Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"DoesNotAutoUpdate"}*//{}
+
+/* Chat */
+ /* Removing line in between messages */
+ .theme-dark .message-group:not(.has-divider) {
+    border-bottom-color: hsla(0, 0%, 100%, 0);
+}
+
+/* Morty, let's jump to present! */
+.chat .jump-to-present-bar {
+    -webkit-transition: background-color .2s;
+    background-color: rgba(153,170,181,.9);
+    border-radius: 50px;
+    bottom: 0;
+    color: hsla(0,0%,100%,.6);
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+    transition: background-color .2s;
+    z-index: 2;
+}
+
+/* Morty! ;-; jump to our terrible past */
+.chat .new-messages-bar {
+    -webkit-transition: background-color .2s;
+    background-color: rgba(114,137,218,.9);
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+    top: 0;
+    transition: background-color .2s;
+    z-index: 2;
+}
+
+/* Text Box */
+.theme-dark .attachButtonDivider-3Glu60 {
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark .inner-zqa7da {
+    background-color: hsla(218, 5%, 47%, 0);
+}
+
+.theme-dark .chat form {
+    -webkit-box-shadow: 0 -1px 0 hsla(0,0%,100%,.06);
+    background-color: #36393f;
+    box-shadow: 0 -1px 0 hsla(0,0%,100%,.06);
+    height: 53px;
+}
+
+.theme-dark .inner-zqa7da {
+    background-color: hsla(218, 5%, 47%, 0);
+    /* height: 10px; */
+    margin-top: -15px;
+}
+
+.theme-dark .typing-2GQL18 {
+    background-color: rgba(54, 57, 62, 0);
+}
+
+.typing-2GQL18 {
+    bottom: -7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+    height: 26px;
+    left: 9px;
+    line-height: 24px;
+    overflow-y: hidden;
+    position: absolute;
+    resize: none;
+    width: 100%;
+}
+
+/* Channel list */
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .iconMuted-1HVBGH, .iconUnread-2eGkvX {
+    visibility: hidden;
+}
+
+.icon-1KK5se {
+    transform: scale(0.7)
+}
+
+.header-2o-2hj {
+    box-shadow: none !important;
+}
+
+.header-2o-2hj:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.scroller-2v3d_F {
+    padding-bottom: 20px;
+    margin-top: -25px !important;
+}
+
+/* Header of Chat */
+.theme-dark .title-3qD0b- {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+    background: #36393f;
+    box-shadow: none !important;
+}
+
+.theme-dark .members-1998pB {
+    border-radius: 10px 0px 0px 0px !important;
+}
+
+.container-PNkimc {
+    background-color: #27292b;
+}
+
+/* Friends List */
+.private-channels .search-bar {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none !important;
+    height: 48px;
+    padding: 0 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.channels-Ie2l6A {
+    -ms-flex-negative: 0;
+    background-color: #27292b;
+    flex-shrink: 0;
+    width: 240px;
+}
+
+#friends .friends-table .friends-row:hover {
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+    border-color: transparent;
+    border-radius: 3px;
+    box-shadow: none !important;
+    margin: 0 20px;
+    padding: 16px 10px;
+}
+
+.search-bar .search-bar-inner {
+    -ms-flex: 1;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#friends .friends-table .friends-row {
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+    border-color: transparent;
+    border-radius: 3px;
+    box-shadow: none !important;
+    margin: 0 20px;
+    padding: 16px 10px;
+}
+
+#friends .friends-table .friends-row:active {
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+    border-color: transparent;
+    border-radius: 3px;
+    box-shadow: none !important;
+    margin: 0 20px;
+    padding: 16px 10px;
+}
+
+.theme-dark .headerBar-UHpsPw {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+    background: #36393f;
+    box-shadow: none;
+}
+
+.theme-dark #friends .friends-table .friends-table-header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark #friends .friends-table .friends-table-header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0);
+}
+
+/* Server List */
+.guilds-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -3.5px;
+}
+
+.guilds-wrapper .guilds .guild-icon {
+    border-radius: 50px !important;
+    background-color: transparent !important;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner {
+    border-radius: 50px !important;
+    background-color: transparent !important;
+}
+
+ /* Home Icon */
+
+ .guild-inner.da-guildInner {
+    background-color: transparent !important;
+}
+
+.guilds-wrapper .guilds .home-icon {
+    background-image: url(https://i.imgur.com/lPF4z01.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 33px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent !important;
+    z-index: 10;
+    color: transparent !important;
+}
+
+svg.home-icon.da-homeIcon {
+    background-color: transparent !important;
+}
+
+
+
+a {
+    -webkit-transition: opacity .5s,color .5s;
+    color: rgba(0, 176, 244, 0);
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity .5s,color .5s;
+}
+
+/* Context Menu */
+
+.theme-dark .separator-2zcjq8 {
+    border-bottom-color: hsla(0, 0%, 96%, 0);
+}
+
+.theme-dark .itemGroup-1tL0uz {
+    border-color: hsla(0, 0%, 96%, 0);
+}
