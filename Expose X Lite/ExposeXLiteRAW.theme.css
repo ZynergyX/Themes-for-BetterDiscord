@@ -1,5 +1,85 @@
 //META{"name":"Expose X Lite Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"DoesNotAutoUpdate"}*//{}
 
+:root {
+    --version: "Beta v0.2";
+}
+
+/* You won't miss him */
+
+#friends .friends-empty p {
+    color: rgba(0,0,0,.4);
+    font-size: 0px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 20px 50px;
+}
+
+
+
+.theme-dark #friends .friends-empty.section-pending .empty-state-image {
+    visibility: hidden;
+    height: 0px;
+}
+.theme-dark #friends .friends-empty.section-blocked .empty-state-image {
+    visibility: hidden;
+    height: 0px;
+}
+.theme-dark #friends .friends-empty.section-add-friend-no-connection .empty-state-image {
+    visibility: hidden;
+    height: 0px;
+}
+
+/* Ooooh! BUTTONS! */
+
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: rgba(114, 137, 218, 0);
+    color: #fff;
+}
+
+#friends .btn:hover {
+    background-color: rgba(105, 126, 196, 0);
+}
+
+#friends .btn {
+    background-color: rgba(114, 137, 218, 0);
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 4px 8px;
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: rgba(114, 137, 218, 0);
+    color: #fff;
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    background-color: rgba(240, 71, 71, 0);
+    color: #fff;
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan:hover {
+    background-color: rgba(240, 71, 71, 0);
+    color: #fff;
+}
+
+/* Showing Version number of Expose X */
+
+.titleBar-AC4pGV::before {
+    content: var(--version);
+    color: white;
+    font-size: 9px;
+    font-weight: 500;
+    position: fixed;
+    -webkit-app-region: drag;
+    left: 2px;
+    bottom: 1px;
+    width: 100px;
+}
+
 /* Chat */
  /* Removing line in between messages */
  .theme-dark .message-group:not(.has-divider) {
@@ -89,6 +169,12 @@
 }
 
 /* Channel list */
+.container-2Rl01u, .header-2o-2hj {
+    cursor: pointer;
+    position: relative;
+    background-color: #27292b;
+}
+
 .iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .iconMuted-1HVBGH, .iconUnread-2eGkvX {
     visibility: hidden;
 }
@@ -126,6 +212,10 @@
 }
 
 /* Friends List */
+.theme-dark #friends .friends-table .friends-row+.friends-row {
+    border-top: 0px solid hsla(0,0%,100%,.1);
+}
+
 .private-channels .search-bar {
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
     background-color: transparent;
@@ -152,6 +242,10 @@
     box-shadow: none !important;
     margin: 0 20px;
     padding: 16px 10px;
+}
+
+.theme-dark .search .search-bar {
+    background-color: hsla(0, 0%, 100%, 0);
 }
 
 .search-bar .search-bar-inner {
@@ -227,6 +321,20 @@
 }
 
  /* Home Icon */
+ .guilds-wrapper .guilds .friends-online {
+    color: hsla(0,0%,100%,.3);
+    font-size: 0px;
+    font-weight: 500;
+    line-height: 0px;
+    margin: 0px 0;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 50px;
+    word-wrap: normal;
+}
+
+
 
  .guild-inner.da-guildInner {
     background-color: transparent !important;
@@ -267,3 +375,70 @@ a {
 .theme-dark .itemGroup-1tL0uz {
     border-color: hsla(0, 0%, 96%, 0);
 }
+
+/* Upload Modal */
+.uploadModal-2ifh8j .inner-3nWsbo {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    border: 0px dashed #aab8e8;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    flex: 1;
+    margin: 10px;
+}
+
+.uploadModal-2ifh8j .footer-3mqk7D {
+    -ms-flex-direction: row;
+    -ms-flex-pack: end;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: end;
+    background-color: rgba(91, 109, 174, 0);
+    border-radius: 0 0 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.uploadModal-2ifh8j .footer-3mqk7D .button {
+    background-color: rgba(91, 109, 174, 0);
+    height: 36px;
+    min-width: 84px;
+    padding: 0!important;
+}
+
+/* Titlebar */
+.typeWindows-1za-n7 {
+    height: 18px;
+    margin-top: -4px;
+}
+
+.wordmark-2iDDfm {
+    visibility: hidden;
+}
+
+.winButton-iRh8-Z {
+    margin-top: 6px;
+    height: 17px;
+    transform: scale(0.8);
+    margin-left: -5px;
+    left: 3px;
+}
+
+/* Status Picker */
+.alt-3btY0e .item-1GzJrl .helper-2c73HK {
+    font-size: 0px;
+    visibility: hidden;
+    line-height: 0px;
+    margin: 4px 0 0 24px;
+    white-space: normal;
+}
+
+.popout-3sVMXz.popoutTopLeft-b5Eb3O.popouttop-left.da-popout.da-popoutTopLeft.da-popouttopLeft {
+    height: 173;
+}
+
+
