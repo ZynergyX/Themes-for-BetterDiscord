@@ -1,5 +1,5 @@
 :root {
-    --version: "v1.0.72";
+    --version: "v1.0.73";
 }
 
 /* Windows Title bar */
@@ -29,6 +29,7 @@
 
 
 /* Games tab */
+
 .description-12ntlD {
     color: #b9bbbe;
     display: block;
@@ -38,19 +39,10 @@
     margin-top: 8px;
     max-height: 80px;
     overflow: hidden;
-    width: 631px;
 }
 
 .dot-22bIa4 {
     border-radius: 50px;
-}
-
-.feedCarousel-21He9p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 120%;
-    margin-left: -130px;
 }
 
 .theme-dark .activityFeed-28jde9 {
@@ -93,7 +85,6 @@
     background-color:transparent;
     color: #fff;
     transition: all 0.2s ease!important;
-
 }
 
 .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
@@ -103,23 +94,6 @@
 
 }
 
-.paginationItem-3-MBTL:before {
-    -webkit-transform: translateY(-50%) translateX(-100%);
-    -webkit-transition-delay: .2s;
-    background: #fff;
-    border-radius: 20px;
-    content: "";
-    height: 10px;
-    left: 16px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(-100%);
-    transition-delay: .2s;
-    width: 10px;
-    z-index: 1;
-    transition: all 0.2s ease!important;
-
-}
 
 .selectedPage-2JQS2s:before {
     -webkit-transform: translateY(-50%) translateX(0);
@@ -209,7 +183,6 @@
     background-color: #202225;
     border-radius: 5px;
     flex: 1 1 75%;
-    height: 658px;
     margin-right: 20px;
     overflow: hidden;
     position: relative;
@@ -227,7 +200,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 159px;
     margin-top: 8px;
     overflow: hidden;
     padding: 16px;
@@ -915,7 +887,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
         width: 5px;
     }
 
-    /* Friends Icon */
+    /* Home Icon */
 
     .guild-inner.da-guildInner {
         background-color: transparent !important;
@@ -1464,6 +1436,50 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
 
 /* ============================================================================ */
 /* PLUGINS */ /*PLUGINS*/ /* PLUGINS */ /*PLUGINS*/ /* PLUGINS */ /*PLUGINS*/
+
+/* Message Logger */
+
+.ml-tab-button {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 15px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.ml-filter-field {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    line-height: 25px;
+    width: 80%;
+    margin-top: 10px;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ml-filter-help-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    line-height: 25px;
+    width: 8%;
+    margin-top: 10px;
+    color: white;
+    padding: 0px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+
 
 /* Citador */
 
