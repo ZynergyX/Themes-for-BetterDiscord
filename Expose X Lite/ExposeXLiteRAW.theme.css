@@ -1,8 +1,70 @@
 //META{"name":"Expose X Lite Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"DoesNotAutoUpdate"}*//{}
 
 :root {
-    --version: "Beta v0.3";
+    --version: "You're using version 0.31 of Expose X Lite";
 }
+
+/* Create or Join guild */
+
+.create-guild-container.deprecated .create-or-join .actions .or {
+    height: 200%;
+}
+
+.create-guild-container.deprecated .action {
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(0,0,0,.0);
+    display: block;
+    overflow: hidden;
+    width: 228px;
+    height: 70px;
+    margin-left: 113px;
+    margin-top: 29px;
+}
+
+.create-guild-container.deprecated .create-or-join .actions {
+    flex-direction: column;
+}
+
+.create-guild-container.deprecated .action+.action {
+    margin-left: 118px;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+.create-guild-container.deprecated .create-guild .guild-form li:first-child {
+    -ms-flex: 1.2 0 0px;
+    -webkit-box-flex: 1.2;
+    flex: 1.2 0 0;
+    margin-left: 182px;
+}
+
+.create-guild-container.deprecated .create-guild .guild-form li {
+    -ms-flex: 1 1 0px;
+    -webkit-box-flex: 1;
+    flex: 1 1 0;
+    margin-left: -1300px;
+}
+
+.regionSelect-3lf4eE .regionSelectInner-24f4Ce {
+    border: 1px solid rgba(205, 205, 205, 0);
+}
+
+
+
+
+.create-guild-container.deprecated .join-server .sample-link {
+    font-size: 0px;
+}
+
+.create-guild-container.deprecated p {
+    font-size: 0px;
+}
+/* end of create or join guild */
 
 /* Profile Modal */
 .theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
@@ -280,18 +342,22 @@
     color: #fff;
 }
 
-/* Showing Version number of Expose X */
+/* Code block in chat */
+.theme-dark .message-group .comment .markup pre {
+    background: #2f3136;
+    border-color: rgba(40, 43, 48, 0);
+}
 
-.titleBar-AC4pGV::before {
+/* Showing Version number of Expose X */
+.need-help-modal.deprecated::before {
     content: var(--version);
     color: white;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 500;
-    position: fixed;
     -webkit-app-region: drag;
-    left: 2px;
-    bottom: 1px;
-    width: 100px;
+    position: fixed;
+    margin-top: 500px;
+    margin-left: 145px;
 }
 
 /* Chat */
@@ -510,6 +576,15 @@
 }
 
 /* Server List */
+.guilds-wrapper .guilds .guild.selected:before {
+    -webkit-transition: height .25s ease-in-out,margin-top .25s ease-in-out;
+    background: #fff;
+    border-radius: 20px;
+    height: 10px;
+    margin-top: -5px;
+    transition: height .25s ease-in-out,margin-top .25s ease-in-out;
+}
+
 .guilds-wrapper .guild-separator:after {
     background: rgba(47, 49, 54, 0);
     content: " ";
@@ -673,6 +748,16 @@ a {
         background-color: rgba(79, 84, 92, 0);
     }
 
+    /* members list */
+
+    .membersWrap-2h-GB4 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-width: 240px;
+        position: relative;
+        margin-top: -18px;
+    }
 
 /* ------------------------ */
 /* PLUGINS */
