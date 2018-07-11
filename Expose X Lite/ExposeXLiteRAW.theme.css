@@ -1,8 +1,222 @@
 //META{"name":"Expose X Lite Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"DoesNotAutoUpdate"}*//{}
 
 :root {
-    --version: "Beta v0.21";
+    --version: "Beta v0.3";
 }
+
+/* Profile Modal */
+.theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
+    border-color: rgba(32, 34, 37, 0);
+}
+
+.tabBarContainer-1s1u-z {
+    border-top: 1px solid hsla(0, 0%, 100%, 0);
+    padding-left: 20px;
+}
+
+.tab-bar.tabBar-2MuP6- .tabBarItem-1b8RUP.selected {
+    border-bottom-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+.theme-dark .footer-1fjuF6 {
+    border-color: rgba(32, 34, 37, 0);
+}
+
+
+
+/* Server Settings */
+.theme-dark .divider-3573oO {
+    background-color: hsla(218, 5%, 47%, 0);
+}
+
+.theme-dark .input-cIJ7To {
+    background-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, 0);
+    color: #f6f6f7;
+}
+
+.theme-dark .container-1nZlH6 {
+    background-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.theme-dark .select-2TCrqx .Select-control:hover {
+    border-color: rgba(4, 4, 5, 0);
+}
+
+.theme-dark .cardPrimaryEditable-3KtE4g {
+    background: rgba(32,34,37,.3);
+    border-color: rgba(32, 34, 37, 0);
+}
+
+.theme-dark .auditLog-3jNbM6 {
+    border-color: rgba(32, 34, 37, 0);
+    color: #72767d;
+}
+
+.theme-dark .divider-1pnAR2 {
+    background-color: rgba(32, 34, 37, 0);
+}
+
+.side-8zPYf6 .separator-gCa7yv {
+    height: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.theme-dark .description-3_Ncsb, .theme-dark .labelDescriptor-1PqHgD {
+    color: rgba(114, 118, 125, 0);
+}
+
+.description-3_Ncsb {
+    font-size: 0px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.theme-dark .card-FDVird:before {
+    background-color: rgba(51, 54, 60, 0);
+    border-color: rgba(43, 46, 50, 0);
+}
+
+.theme-dark .emoji-row {
+    -webkit-box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
+    box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark .guild-settings-members-member {
+    -webkit-box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
+    box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark .invite-settings-invite-row {
+    -webkit-box-shadow: 0 1px 0 0 hsla(0,0%,100%,.04);
+    box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0);
+    color: #f6f6f7;
+}
+
+/* Discord Settings */
+.theme-dark .cardPrimaryOutline-29Ujqw {
+    border-color: rgba(32, 34, 37, 0);
+}
+
+.theme-dark .accountBtnInner-sj5jLs:hover {
+    background-color: #4f545c;
+    border-color: rgba(4, 4, 5, 0);
+}
+
+.theme-dark .accountBtnInner-sj5jLs {
+    background-color: #36393f;
+    border-color: rgba(32, 34, 37, 0);
+}
+
+.connectionDelete-2Odoln {
+    border: 1px solid hsla(0, 0%, 100%, 0);
+    border-radius: 3px;
+    color: transparent;
+    cursor: pointer;
+    height: 32px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+}
+
+
+
+.connectionHeader-2MDqhu {
+    -ms-flex-align: center;
+    -ms-flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    align-items: center;
+    background: rgba(0,0,0,.1);
+    border-bottom: 0px solid rgba(0,0,0,.15);
+    border-radius: 5px 5px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px;
+    position: relative;
+}
+
+.theme-dark .notificationsSound-27jFSh {
+    -webkit-box-shadow: inset 0 -1px 0 0 #4f545c;
+    box-shadow: inset 0 -1px 0 0 rgba(79, 84, 92, 0);
+}
+
+.theme-dark .markDash-3hAolZ {
+    background: rgba(79, 84, 92, 0);
+}
+
+.theme-dark .item-3eFBNF {
+    -webkit-box-shadow: inset 0 -1px 0 0 #4f545c;
+    box-shadow: inset 0 -1px 0 0 rgba(79, 84, 92, 0);
+}
+
+/* Find or Start a Conversion */
+.theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b {
+    border-color: rgba(79, 84, 92, 0);
+    color: #72767d;
+}
+
+.theme-dark .keybindShortcutTipsSelect-HDyfe8:last-of-type:before {
+    background-color: rgba(79, 84, 92, 0);
+}
+
+.theme-dark .input-2VB9rf {
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.2), 0 0 0 1px rgba(0, 0, 0, 0);
+    background-color: #72767d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-suggestions-header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark .wrapper-1cBijl {
+    background-color: rgba(36,39,43,.2);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(54,57,63,.3)),to(rgba(47,49,54,.3)));
+    background: linear-gradient(-180deg,rgba(54,57,63,.3),rgba(47,49,54,.3));
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.theme-dark #friends .friends-table .friends-table-header .friends-column-separator {
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark #friends .tab-bar .tab-bar-separator {
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+
+
+/* Permissions Settings */
+
+.theme-dark .item-3T2z1R {
+    border-color: rgba(24, 25, 28, 0);
+}
+
+.item-3T2z1R:first-child {
+    border-left-width: 1px;
+    border-radius: 3px;
+}
+
+.theme-dark .item-3T2z1R {
+    border-color: rgba(24, 25, 28, 0);
+    border-radius: 3px;
+}
+
+
 
 /* You won't miss him */
 
@@ -84,6 +298,10 @@
  /* Removing line in between messages */
  .theme-dark .message-group:not(.has-divider) {
     border-bottom-color: hsla(0, 0%, 100%, 0);
+}
+
+.theme-dark .friends-table .messages .divider:not(.red) div, .theme-dark .messages-wrapper .messages .divider:not(.red) div {
+    background: rgba(71, 74, 79, 0);
 }
 
 /* Morty, let's jump to present! */
@@ -292,6 +510,16 @@
 }
 
 /* Server List */
+.guilds-wrapper .guild-separator:after {
+    background: rgba(47, 49, 54, 0);
+    content: " ";
+    height: 0px;
+    left: 20%;
+    position: absolute;
+    right: 20%;
+    top: 0px;
+}
+
 .guilds-wrapper {
     margin-left: 15px;
     margin-right: 15px;
@@ -414,5 +642,65 @@ a {
 
 .popout-3sVMXz.popoutTopLeft-b5Eb3O.popouttop-left.da-popout.da-popoutTopLeft.da-popouttopLeft {
     height: 173;
+}
+
+/* Games Tab */
+.theme-dark .player-1kJMbj {
+    border-bottom-color: rgba(54, 57, 63, 0);
+}
+
+.theme-dark .sectionLine-JjseS9 {
+    background-color: rgba(54, 57, 63, 0);
+}
+
+.theme-dark .headerText-2niCs_ {
+    border-top-color: rgba(47, 49, 54, 0);
+    color: #dcddde;
+}
+
+    /* Games pop up */
+
+    .theme-dark .publisher-2ZxPEd {
+        border-bottom: 1px solid rgba(47, 49, 54, 0);
+        color: #72767d;
+    }
+
+    .theme-dark .playersHeaderLine-2luL7r {
+        background-color: rgba(54, 57, 63, 0);
+    }
+
+    .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled {
+        background-color: rgba(79, 84, 92, 0);
+    }
+
+
+/* ------------------------ */
+/* PLUGINS */
+
+/* Better Friends Counter */
+.theme-dark #friends .tab-bar .tab-bar-item .badge {
+    background-color: hsla(0, 0%, 100%, 0);
+    color: #ffffff;
+}
+
+/* Members Count */
+#memberCount {
+    position: absolute;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.9vh 0;
+    z-index: 5;
+    left: 15px;
+    top: 13px;
+}
+
+.theme-dark #memberCount {
+    color: hsla(0, 0%, 100%, 0.4);
+    background: rgba(47, 49, 54, 0);
 }
 
