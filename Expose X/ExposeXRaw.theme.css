@@ -1,5 +1,5 @@
 :root {
-    --version: "v1.0.73";
+    --version: "You're using version 1.0.74 of Expose X";
 }
 
 /* Windows Title bar */
@@ -323,17 +323,15 @@
 }
 
 /* Showing Version number of Expose X */
-
-.titleBar-AC4pGV::before {
+.need-help-modal.deprecated::before {
     content: var(--version);
     color: white;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 500;
-    position: fixed;
     -webkit-app-region: drag;
-    left: 2px;
-    bottom: 1px;
-    width: 100px;
+    position: fixed;
+    margin-top: 500px;
+    margin-left: 145px;
 }
 
 /* Custom Background Editing */
@@ -937,6 +935,25 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
         width: 53px;
     }
 
+    .unread-mentions-indicator-bottom, .unread-mentions-indicator-top {
+        height: 20px;
+        left: 0;
+        overflow: hidden;
+        padding: 6px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        width: 60px;
+    }
+
+    .unread-mentions-indicator-bottom .unread-mentions-bar, .unread-mentions-indicator-top .unread-mentions-bar {
+        -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.6);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+    }
+
+
+
     /* Mention Badge on Server Icon */
 
     .guilds-wrapper .guilds .guild .badge {
@@ -1197,6 +1214,23 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
 }
 
 /* Friends list */
+
+.private-channels .search-bar {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+    height: 48px;
+    padding: 0 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.theme-dark .headerBar-UHpsPw {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+    background: rgba(54, 57, 63, 0);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+}
 
 .theme-dark .wrapper-1cBijl {
     background-color: rgba(36, 39, 43, 0);
