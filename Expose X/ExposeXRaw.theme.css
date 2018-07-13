@@ -1,7 +1,8 @@
 :root {
-    --version: "You're using version 1.0.74 of Expose X";
+    --version: "You're using version 1.0.75 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/"
 }
+
 
 /* Windows Title bar */
 
@@ -211,6 +212,10 @@
 
 /* Upload Menu in chat bar */
 
+.theme-dark .attachButtonDivider-3Glu60 {
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
 .theme-dark .attachPopout-1n-ZKM {
     background-color: transparent;
 }
@@ -404,11 +409,12 @@
     /* size of image */
 .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {
     border-radius: 8px 8px 0px 0px;
+    border-color: #3a71c1;
     height: 414px;
     margin-left: -12px;
     margin-right: 12px;
-    margin-top: -33p;
-    width: 719px;
+    margin-top: -33px;
+    width: 720px;
     box-shadow: 0px 0px 0px rgba(0,0,0,0);
 }
     /* Position of comment box */
@@ -442,9 +448,15 @@
         width: auto;
     }
 
+    button.button.button-primary.da-button.da-buttonPrimary {
+        background-color: transparent;
+        color: white;
+    }
 
-
-
+    button.button.da-button {
+        background-color: transparent;
+        color: white;
+    }
 
 
 /*=============================================
@@ -496,7 +508,7 @@
     background: transparent !important;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:active {
-    background: #525252!important;
+    background: transparent !important;
     margin-top: 10px;
 }
 .menu-Sp6bN1.alt-3btY0e .separator-2zcjq8 {
@@ -797,6 +809,16 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     overflow-y: show;
 }
 
+.guilds-wrapper .guild-separator:after {
+    background: rgba(47, 49, 54, 0);
+    content: " ";
+    height: 2px;
+    left: 20%;
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+
 .guilds-wrapper .guilds .guild .guild-inner {
     background: rgba(47, 49, 54, 0);
     border-radius: 25px;
@@ -1057,6 +1079,15 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
 
 /* Channel List */
 
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .iconMuted-1HVBGH, .iconUnread-2eGkvX {
+    visibility: hidden;
+}
+
+
+.icon-1KK5se {
+    transform: scale(0.7)
+}
+
 .unread-1Dp-OI {
     background-color: hsla(0, 0%, 100%, 0);
 }
@@ -1112,6 +1143,12 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
         }
 
         /* Rest of Chat */
+
+        /* Code block in chat */
+.theme-dark .message-group .comment .markup pre {
+    background: #2f3136;
+    border-color: rgba(40, 43, 48, 0);
+}
 
 .theme-dark .chat {
     background-color: rgba(54, 57, 62, 0) !important;
@@ -1348,6 +1385,25 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
 
 /* Server settings page */
 
+.theme-dark .divider-3573oO {
+    background-color: hsla(218, 5%, 47%, 0);
+}
+
+.theme-dark .auditLog-3jNbM6 {
+    border-color: rgba(32, 34, 37, 0);
+    color: #72767d;
+}
+
+.theme-dark .divider-1pnAR2 {
+    background-color: rgba(32, 34, 37, 0);
+}
+
+.divider-1pnAR2 {
+    background: green;
+    height: 0px;
+    width: 100%;
+}
+
 .theme-dark .item-3T2z1R {
     border-color: rgba(24, 25, 28, 0);
 }
@@ -1466,20 +1522,23 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
 }
 
 /* Profile Modal */
-
-.image-33JSyf.maskProfile-1ObLFT.mask-3OgeRz:active {   /* ZOOM IN AVATAR ON CLICK */
-    transform: scale(2.5) translateX(86px) translateY(30px);
-    transition: all 0.2s ease!important;
-    z-index: 100000000;
+.theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
+    border-color: rgba(32, 34, 37, 0);
 }
 
-
-
-.image-33JSyf.maskProfile-1ObLFT.mask-3OgeRz {
-    transition: all 0.2s ease!important;
+.tabBarContainer-1s1u-z {
+    border-top: 1px solid hsla(0, 0%, 100%, 0);
+    padding-left: 20px;
 }
 
+.tab-bar.tabBar-2MuP6- .tabBarItem-1b8RUP.selected {
+    border-bottom-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
 
+.theme-dark .footer-1fjuF6 {
+    border-color: rgba(32, 34, 37, 0);
+}
 
 
 /* ============================================================================ */
@@ -1666,6 +1725,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
 
 /* Switch */
    /* Discord Settings */
+   
 .valueChecked-m-4IJZ.sizeDefault-2YlOZr:after {
     -webkit-transform: translate3d(18px,0,0);
     transform: translate3d(0px,0,0);
