@@ -1,8 +1,12 @@
 //META{"name":"Expose X Lite Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"DoesNotAutoUpdate"}*//{}
 
 :root {
-    --version: "You're using version 0.31 of Expose X Lite";
+    --version: "You're using pre-release 1 of Expose X Lite";
+    --otherinfo: "You can see more on the website: http://ExposeX.ml/"
 }
+
+
+
 
 /* Create or Join guild */
 
@@ -360,8 +364,27 @@
     margin-left: 145px;
 }
 
+      .need-help-modal.deprecated .header::before {
+    content: var(--otherinfo);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    -webkit-app-region: drag;
+    position: fixed;
+    margin-top: 460px;
+    margin-left: 0px;
+}
+
+
+
 /* Chat */
  /* Removing line in between messages */
+ .chat .messages {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #35373a;
+}
+
  .theme-dark .message-group:not(.has-divider) {
     border-bottom-color: hsla(0, 0%, 100%, 0);
 }
@@ -411,6 +434,7 @@
 }
 
 /* Text Box */
+
 .theme-dark .attachButtonDivider-3Glu60 {
     background-color: hsla(0, 0%, 100%, 0);
 }
@@ -421,9 +445,13 @@
 
 .theme-dark .chat form {
     -webkit-box-shadow: 0 -1px 0 hsla(0,0%,100%,.06);
-    background-color: #36393f;
+    background-color: #35373a;
     box-shadow: 0 -1px 0 hsla(0,0%,100%,.06);
     height: 53px;
+}
+
+.theme-dark .chat>.content, .theme-dark .chat form {
+    background-color: #35373a;
 }
 
 .theme-dark .inner-zqa7da {
@@ -471,7 +499,7 @@
 /* Header of Chat */
 .theme-dark .title-3qD0b- {
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
-    background: #36393f;
+    background: #35373a;
     box-shadow: none !important;
 }
 
