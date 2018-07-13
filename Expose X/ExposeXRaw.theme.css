@@ -1,5 +1,6 @@
 :root {
     --version: "You're using version 1.0.74 of Expose X";
+    --otherinfo: "You can see more on the website: http://ExposeX.ml/"
 }
 
 /* Windows Title bar */
@@ -208,7 +209,7 @@
 
 
 
-/* Upload Menu in chat bar */ 
+/* Upload Menu in chat bar */
 
 .theme-dark .attachPopout-1n-ZKM {
     background-color: transparent;
@@ -334,6 +335,17 @@
     margin-left: 145px;
 }
 
+            .need-help-modal.deprecated .header::before {
+    content: var(--otherinfo);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    -webkit-app-region: drag;
+    position: fixed;
+    margin-top: 460px;
+    margin-left: 0px;
+}
+
 /* Custom Background Editing */
    /* If you have the normal file, a code is already in there for this */
 
@@ -436,17 +448,17 @@
 
 
 /*=============================================
-=               Status Picker                 =          created by FroztySeven 
+=               Status Picker                 =          created by FroztySeven
 =                                             =               modified by Corbs
 =============================================*/
 
 .popout-3sVMXz.popoutTop-3uu9vG-left {
 	box-shadow: none;
 }
-@keyframes status-picker-bg { 
+@keyframes status-picker-bg {
     to {
         background-color: rgba(0,0,0,0.85);
-    } 
+    }
 }
 .menu-Sp6bN1.alt-3btY0e {
     animation: status-picker-bg 200ms linear;
@@ -663,7 +675,7 @@
 /* Animations */
 
 
-  
+
 .bd-blue .root-SR8cQa .tab-bar .tab-bar-item,
 .root-SR8cQa .tab-bar .tab-bar-item {
     transition: 200ms ease!important;
@@ -824,7 +836,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     line-height: 50px;
     overflow: hidden;
     text-align: center;
-    
+
 
 }
 
@@ -846,7 +858,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     height: 50px;
     margin: 0;
     width: 50px;
-    
+
 
 }
 
@@ -855,7 +867,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     animation: guildborder 10s ease;
 }
 .guilds-wrapper .guilds .guild.selected {
-    border-radius: 3px!important;     
+    border-radius: 3px!important;
     animation: guildborder 10s ease;
 }
 
@@ -907,7 +919,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
         background-color: transparent !important;
     }
 
-  
+
 
     a {
         -webkit-transition: opacity .5s,color .5s;
@@ -1414,7 +1426,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
         margin-left: -14px;
     }
 
-    
+
 
     /* Off */
 
@@ -1423,7 +1435,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
         box-shadow: inset 0 1px 1px rgba(0,0,0,.15);
         width: 25px;
     }
-    
+
 
 /* Putting background around sexy wumpus */
 
@@ -1460,6 +1472,8 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     transition: all 0.2s ease!important;
     z-index: 100000000;
 }
+
+
 
 .image-33JSyf.maskProfile-1ObLFT.mask-3OgeRz {
     transition: all 0.2s ease!important;
@@ -1662,14 +1676,14 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     border-radius: 14px;
     height: 24px;
     width: 24px;
-    
+
 }
 
 .valueUnchecked-2lU_20:after {
     -webkit-transform: translateZ(0);
     transform: translateZ(0) scale(0.5);
 }
-   
+
 .value-2hFrkk:after {
     -webkit-transition: width .0s ease-in-out,left .0s ease-in-out,-webkit-transform .15s ease-in-out;
     left: 0;
@@ -1946,7 +1960,7 @@ body:active .popoutBottom-1YbShG[style*="overflow: hidden; visibility: visible;"
     background-color: transparent !important;
     margin-left: -5px;
     line-height: 32px;
-} 
+}
 
 .guilds-wrapper.DSAC-styled .guild-separator ~ .guild:not(.selected):hover {
     background-color: transparent !important;
