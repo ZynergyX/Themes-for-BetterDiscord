@@ -1,0 +1,5 @@
+//META{"name":"Hide Blocked Messsages","description":"Hides all blocked messages.","author":"Corbs","version":"1"}*//{}
+
+.theme-dark .friends-table .messages .message-group-blocked:hover, .theme-dark .messages-wrapper .messages .message-group-blocked {
+    visibility: hidden;
+}
