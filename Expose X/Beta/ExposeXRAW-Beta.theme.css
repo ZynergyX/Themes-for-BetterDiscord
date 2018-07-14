@@ -14,7 +14,7 @@
     /* adding to background of pop ups */
 .backdrop-1wrmKB.da-backdrop {
     background-image: var(--custombackground);
-    filter: blur(10px);
+    filter: brightness(50%) blur(5px) !important;
     opacity: 1 !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -29,6 +29,18 @@ background-position: center !important;
 }
 
 /* Assigning button backgrounds to accent color */
+.avatar-uploader-inner {
+    background-color: var(--accentcolor) !important;
+}
+
+.form-deprecated .btn-primary:hover, .form.deprecated .btn-primary:hover {
+    background-color: var(--accentcolor) !important;
+}
+
+.form-deprecated .btn-primary:hover, .form.deprecated .btn-primary {
+    background-color: var(--accentcolor) !important;
+}
+
 .flexChild-faoVW3.switchEnabled-V2WDBB.switch-3wwwcV.valueChecked-m-4IJZ.value-2hFrkk.sizeDefault-2YlOZr.size-3rFEHg.themeDefault-24hCdX.da-flexChild.da-switchEnabled.da-switch.da-valueChecked.da-value.da-sizeDefault.da-size.da-themeDefault {
     background-color: var(--accentcolor) !important;
 }
