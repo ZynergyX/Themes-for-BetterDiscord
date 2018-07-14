@@ -1,9 +1,8 @@
-//META{"name":"Expose X Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH. Background is one entire color and you can add a custom background. Buttons are round and sexy blue. Supports the following plugins: Better Reddux, Server Folders, Birthday Plugin, and Clock plugin.","author":"Corbs","version":"AutoUpdate"}*//{}
+//META{"name":"Expose X Beta","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"AutoUpdate"}*//{}
 
 @import url(https://rawgit.com/CorbsEditor/Themes-for-BetterDiscord/master/Expose%20X/Beta/ExposeXRAW-Beta.theme.css);
 
-.appMount-3VJmYg {
-    background-image: url(https://cdn.discordapp.com/attachments/455112801627668492/459201524703428608/test.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+:root {  /* Change the custom background and accent color here */
+    --custombackground: url(http://pic3.bbzhi.com/xitongbizhi/kejizhiganpingguomacbi/computer_mac_246056_13.jpg);
+    --accentcolor: #738bd7;   /* To reset the color back to default, use #738bd7 */
 }
