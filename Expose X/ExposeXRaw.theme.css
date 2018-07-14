@@ -3,6 +3,13 @@
     --otherinfo: "You can see more on the website: http://ExposeX.ml/"
 }
 
+/* Fixing background issues */
+.appMount-3VJmYg {
+background-size: cover !important;
+background-repeat: no-repeat !important;
+background-position: center !important;
+}
+
 
 /* Windows Title bar */
 
