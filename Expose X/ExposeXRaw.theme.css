@@ -1617,7 +1617,9 @@ svg.colorDefaultText-oas-QM.icon-sxakjD {
 svg.colorUnreadText-2t7XRb.icon-sxakjD {
     opacity: 1 !important;
     filter: brightness(10000px) contrast(100px);
-    color: white;
+    color: transparent;
+    background-color: white;
+    border-radius: 50px;
 }
 
 .contentConnectedVoice-qL-YrL:active, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM:active {
