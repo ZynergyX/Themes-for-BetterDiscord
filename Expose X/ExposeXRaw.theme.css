@@ -1622,6 +1622,14 @@ svg.colorUnreadText-2t7XRb.icon-sxakjD {
     border-radius: 50px;
 }
 
+svg.colorSelectedText-1y4Wvs.icon-sxakjD {
+    opacity: 1 !important;
+    filter: brightness(10000px) contrast(100px);
+    color: transparent;
+    background-color: rgb(181, 181, 181);
+    border-radius: 50px;
+}
+
 svg.colorHoveredText-OZnAgu.icon-sxakjD {
     opacity: 1 !important;
     filter: brightness(10000px) contrast(100px);
