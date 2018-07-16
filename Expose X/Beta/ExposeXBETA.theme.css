@@ -14,4 +14,11 @@
     --fontchannelname: Whitney;
     --fonttooltip: Whitney;
     --fontusername: Whitney;
+    
+        /* Make custom status colors here, you're online? */
+    --online: rgb(71, 191, 71);
+    --idle: yellow;
+    --dnd: red;
+    --offline: grey;
+    --streaming: purple;
 }
