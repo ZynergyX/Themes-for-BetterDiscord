@@ -1,7 +1,7 @@
 :root {
     --version: "You're using version 1.0.8 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
-    --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
+    --news: "Redownload Expose X theme for new custom options. Bugs may occur if you don't."; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
 
 /* for Expose X news | news for Expose X is rare so don't worry about it */
@@ -1611,13 +1611,31 @@ background-position: center !important;
 }
 
 svg.colorDefaultText-oas-QM.icon-sxakjD {
-    opacity: 0.3 !important;
+    opacity: 0 !important;
 }
 
 svg.colorUnreadText-2t7XRb.icon-sxakjD {
     opacity: 1 !important;
     filter: brightness(10000px) contrast(100px);
-    color: white;
+    color: transparent;
+    background-color: white;
+    border-radius: 50px;
+}
+
+svg.colorSelectedText-1y4Wvs.icon-sxakjD {
+    opacity: 1 !important;
+    filter: brightness(10000px) contrast(100px);
+    color: transparent;
+    background-color: rgb(181, 181, 181);
+    border-radius: 50px;
+}
+
+svg.colorHoveredText-OZnAgu.icon-sxakjD {
+    opacity: 1 !important;
+    filter: brightness(10000px) contrast(100px);
+    color: transparent;
+    background-color: rgb(209, 209, 209);
+    border-radius: 50px;
 }
 
 .contentConnectedVoice-qL-YrL:active, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM:active {
