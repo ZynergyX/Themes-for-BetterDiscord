@@ -1611,18 +1611,10 @@ background-position: center !important;
 }
 
 svg.colorDefaultText-oas-QM.icon-sxakjD {
-    opacity: 0.3 !important;
+    opacity: 0 !important;
 }
 
 svg.colorUnreadText-2t7XRb.icon-sxakjD {
-    opacity: 1 !important;
-    filter: brightness(10000px) contrast(100px);
-    color: transparent;
-    background-color: white;
-    border-radius: 50px;
-}
-
-svg.colorUnreadText-2t7XRb.icon-sxakjD:hover {
     opacity: 1 !important;
     filter: brightness(10000px) contrast(100px);
     color: transparent;
