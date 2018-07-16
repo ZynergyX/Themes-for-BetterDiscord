@@ -5,7 +5,6 @@
 }
 
 /* for Expose X news | news for Expose X is rare so don't worry about it */
-/* Showing Version number of Expose X */
 .app::before {
     content: var(--news);
     color: white;
