@@ -1622,6 +1622,22 @@ svg.colorUnreadText-2t7XRb.icon-sxakjD {
     border-radius: 50px;
 }
 
+svg.colorUnreadText-2t7XRb.icon-sxakjD:hover {
+    opacity: 1 !important;
+    filter: brightness(10000px) contrast(100px);
+    color: transparent;
+    background-color: white;
+    border-radius: 50px;
+}
+
+svg.colorHoveredText-OZnAgu.icon-sxakjD {
+    opacity: 1 !important;
+    filter: brightness(10000px) contrast(100px);
+    color: transparent;
+    background-color: rgb(209, 209, 209);
+    border-radius: 50px;
+}
+
 .contentConnectedVoice-qL-YrL:active, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM:active {
     background-color: rgba(54, 57, 63, 0.5);
 }
