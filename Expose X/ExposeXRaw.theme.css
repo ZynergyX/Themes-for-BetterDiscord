@@ -1,7 +1,7 @@
 :root {
     --version: "You're using version 1.0.8 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
-    --news: "Redownload Expose X theme for new custom options. Bugs may occur if you don't."; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
+    --news: "Redownload Expose X theme for new custom options. Bugs may occur if you don't. Support Server: Pdz7jAH"; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
 
 /* for Expose X news | news for Expose X is rare so don't worry about it */
