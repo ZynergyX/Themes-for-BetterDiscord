@@ -4,6 +4,20 @@
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
 
+/* for Expose X news | news for Expose X is rare so don't worry about it */
+/* Showing Version number of Expose X */
+.app::before {
+    content: var(--news);
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    -webkit-app-region: drag;
+    position: fixed;
+    z-index: 10000;
+    bottom: 0px;
+    background-color: black;
+}
+
 /* for custom status colors */
 .alt-3btY0e .item-1GzJrl:nth-of-type(1) .statusIconText-3b4TkH > div {
     background-color: var(--online);
@@ -283,6 +297,10 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
 }
 
 /* Windows Title bar */
+.typeWindows-1za-n7 {
+    height: 28px;
+}
+
 .titleBar-AC4pGV {
     -webkit-app-region: drag;
     z-index: 3001;
@@ -587,36 +605,12 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
 
 .theme-dark .menu-Sp6bN1 {
     -webkit-box-shadow: 0 0 0px rgba(0,0,0,0), 0 0px 0px rgba(0,0,0,0);
-    background: #282b30;
     box-shadow: 0 0 0px rgba(0,0,0,0), 0 0px 0px rgba(0,0,0,0);
-}
-
-.theme-dark .menu-Sp6bN1 {
-    background: transparent;
 }
 
 .popout-3sVMXz {
     -webkit-box-shadow: 0 0 0px rgba(0,0,0,.0), 0 0px 0px rgba(0,0,0,0);
-    -webkit-filter: blur(0);
-    border-radius: 5px;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0,0,0,0);
-    contain: layout;
-    padding: 0;
-    z-index: 1000;
-}
-
-.popout-open .header-2o-2hj {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-
-
-.theme-dark .item-1GzJrl {
-    color: hsla(0,0%,100%,.6);
-    background-color: #282b30;
-    border-radius: 50px;
-    margin-top: 5px;
-    height: 30px;
 }
 
 .theme-dark .separator-2zcjq8 {
@@ -1383,9 +1377,10 @@ background-position: center !important;
     }
 
     .badge {
-        background-color: rgba(240, 71, 71, 0.51);
+        background-color: var(--accentcolor);
         font-size: 32px;
         line-height: 34px;
+        opacity: 0.8;
     }
 
 
@@ -1466,7 +1461,7 @@ background-position: center !important;
     visibility: hidden;
 }
 
-.scrollerFade-1Ijw5y .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerFade-1Ijw5y .scroller-2FKFPG::-webkit-scrollbar-track {
+.scrollerFade-1Ijw5y .scroller-2FKFPG:hover::-webkit-scrollbar-thumb, .scrollerFade-1Ijw5y .scroller-2FKFPG:hover::-webkit-scrollbar-track, .scrollerFade-1Ijw5y:hover::-webkit-scrollbar-thumb, .scrollerFade-1Ijw5y:hover::-webkit-scrollbar-track {
     visibility: hidden;
 }
 
