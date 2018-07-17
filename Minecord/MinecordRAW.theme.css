@@ -1,1 +1,366 @@
+//META{"name":"Minecord","description":"A theme based off of the Minecraft.net website and also the new Minecraft Launcher for Windows and Mac.","author":"Corbs","version":"RAW"}*//{}
 
+:root {
+    --greencolor: #36B030;
+    --greycolor: rgb(49, 49, 49);
+    --pixelbackgroud: url(https://minecraft.net/static/theme/freyja/img/bg-wool-dark.ddea3e9ef4d4.png);
+    --version: "Minecord v0.0.1";
+}
+
+/* v */
+.app::before {
+    content: var(--version);
+    color: white;
+    font-family: minecraftia;
+    font-size: 7px;
+    font-weight: 500;
+    -webkit-app-region: drag;
+    position: fixed;
+    z-index: 10000;
+    top: 8.5px;
+    left: 7px;
+    background-color: black;
+}
+
+/* Server list */
+        /* Home Icon */
+
+        .guild-inner.da-guildInner {
+            background-color: transparent !important;
+        }
+    
+        .guilds-wrapper .guilds .home-icon {
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjRweCIg%0D%0AaGVpZ2h0PSIzOHB4IiB2aWV3Qm94PSIwIDAgNjQgMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0%0D%0AdHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcv%0D%0AMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQyICgzNjc4MSkgLSBodHRw%0D%0AOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+UmVhbG1zQnV0%0D%0AdG9uU3RhdGljPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgog%0D%0AICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Ut%0D%0Ad2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9%0D%0AIlJlYWxtc0J1dHRvblN0YXRpYyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMuMDAwMDAwLCAtNy4w%0D%0AMDAwMDApIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hh%0D%0AcGUiIGZpbGwtb3BhY2l0eT0iMCIgZmlsbD0iIzAwMDAwMCIgcG9pbnRzPSIwIDAgNzAgMCA3MCA0%0D%0ANSA1MyA0NSA1MyAzMCA2NSAzMCA2NSAyMyA2MSAyMyA2MSAxNSA2MyAxNSA2MyAxNyA2NyAxNyA2%0D%0ANyAxNSA2NSAxNSA2NSAxMyA1NyAxMyA1NyAxNSA1NSAxNSA1NSA3IDE1IDcgMTUgMTUgMTMgMTUg%0D%0AMTMgMTMgNSAxMyA1IDE1IDMgMTUgMyAxNyA3IDE3IDcgMTUgOSAxNSA5IDIzIDUgMjMgNSAzMCAx%0D%0ANyAzMCAxNyA0NSAwIDQ1Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFw%0D%0AZSIgZmlsbD0iI0EwNTMwNyIgcG9pbnRzPSIxNSA3IDMxIDcgMzEgMTMgMjkgMTMgMjkgMTEgMTcg%0D%0AMTEgMTcgMTMgMTUgMTMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBl%0D%0AIiBmaWxsPSIjODgyRjA1IiBwb2ludHM9IjMxIDcgMzMgNyAzMyAxOSAzMSAxOSI+PC9wb2x5Z29u%0D%0APgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiNFNDc3MkEiIHBvaW50cz0i%0D%0AMzMgNyAzOSA3IDM5IDE3IDM3IDE3IDM3IDIxIDM5IDIxIDM5IDIzIDMzIDIzIj48L3BvbHlnb24+%0D%0ACiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0Y2OUYzQSIgcG9pbnRzPSIz%0D%0AOSA3IDU1IDcgNTUgMTUgNTMgMTUgNTMgMTMgNTEgMTMgNTEgMTEgNDcgMTEgNDcgMTMgNDUgMTMg%0D%0ANDUgMTUgMzkgMTUiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBm%0D%0AaWxsPSIjRkFDMjhDIiBwb2ludHM9IjE3IDExIDI5IDExIDI5IDEzIDMxIDEzIDMxIDIzIDI3IDIz%0D%0AIDI3IDE5IDI1IDE5IDI1IDE3IDIxIDE3IDIxIDE1IDE3IDE1IDE3IDE3IDIxIDE3IDIxIDE5IDE5%0D%0AIDE5IDE5IDIzIDE1IDIzIDE1IDEzIDE3IDEzIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5%0D%0AZ29uIGlkPSJTaGFwZSIgZmlsbD0iI0ZDRDhCMCIgcG9pbnRzPSI0NyAxMSA1MSAxMSA1MSAxMyA1%0D%0AMyAxMyA1MyAxNSA0OSAxNSA0OSAxNyA1MyAxNyA1MyAxNSA1NSAxNSA1NSAyMyAzOSAyMyAzOSAx%0D%0ANSA0MSAxNSA0MSAxNyA0NSAxNyA0NSAxMyA0NyAxMyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8%0D%0AcG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiMwOTgwQjAiIHBvaW50cz0iNSAxMyA3IDEzIDcgMTUg%0D%0ANSAxNSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM0%0D%0AMUM3QzUiIHBvaW50cz0iNyAxMyAxMyAxMyAxMyAxNSA3IDE1Ij48L3BvbHlnb24+CiAgICAgICAg%0D%0AICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iIzQxQzdDNSIgcG9pbnRzPSI1NyAxMyA2MyAx%0D%0AMyA2MyAxNSA1NyAxNSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUi%0D%0AIGZpbGw9IiMwOTgwQjAiIHBvaW50cz0iNjMgMTMgNjUgMTMgNjUgMTUgNjMgMTUiPjwvcG9seWdv%0D%0Abj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjMDk4MEIwIiBwb2ludHM9%0D%0AIjMgMTUgNSAxNSA1IDE3IDMgMTciPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9%0D%0AIlNoYXBlIiBmaWxsPSIjNDFDN0M1IiBwb2ludHM9IjUgMTUgNyAxNSA3IDE3IDUgMTciPjwvcG9s%0D%0AeWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjODgyRjA1IiBwb2lu%0D%0AdHM9IjkgMTUgMTEgMTUgMTEgMjMgOSAyMyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdv%0D%0AbiBpZD0iU2hhcGUiIGZpbGw9IiMwOTgwQjAiIHBvaW50cz0iMTEgMTUgMTMgMTUgMTMgMTcgMTEg%0D%0AMTciPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjNDFD%0D%0AN0M1IiBwb2ludHM9IjEzIDE1IDE1IDE1IDE1IDE3IDEzIDE3Ij48L3BvbHlnb24+CiAgICAgICAg%0D%0AICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGNiIgcG9pbnRzPSIxNyAxNSAxOSAx%0D%0ANSAxOSAxNyAxNyAxNyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUi%0D%0AIGZpbGw9IiNBNTQ5QzYiIHBvaW50cz0iMTkgMTUgMjEgMTUgMjEgMTcgMTkgMTciPjwvcG9seWdv%0D%0Abj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjQTU0OUM2IiBwb2ludHM9%0D%0AIjI1IDE1IDI3IDE1IDI3IDE3IDI1IDE3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29u%0D%0AIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGNiIgcG9pbnRzPSIyNyAxNSAyOSAxNSAyOSAxNyAyNyAx%0D%0ANyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiNGRkZG%0D%0ARjYiIHBvaW50cz0iNDEgMTUgNDMgMTUgNDMgMTcgNDEgMTciPjwvcG9seWdvbj4KICAgICAgICAg%0D%0AICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjNjc5QzJFIiBwb2ludHM9IjQzIDE1IDQ1IDE1%0D%0AIDQ1IDE3IDQzIDE3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIg%0D%0AZmlsbD0iIzY3OUMyRSIgcG9pbnRzPSI0OSAxNSA1MSAxNSA1MSAxNyA0OSAxNyI+PC9wb2x5Z29u%0D%0APgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiNGRkZGRjYiIHBvaW50cz0i%0D%0ANTEgMTUgNTMgMTUgNTMgMTcgNTEgMTciPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24g%0D%0AaWQ9IlNoYXBlIiBmaWxsPSIjNDFDN0M1IiBwb2ludHM9IjU1IDE1IDU3IDE1IDU3IDE3IDU1IDE3%0D%0AIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iIzA5ODBC%0D%0AMCIgcG9pbnRzPSI1NyAxNSA1OSAxNSA1OSAxNyA1NyAxNyI+PC9wb2x5Z29uPgogICAgICAgICAg%0D%0AICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM4ODJGMDUiIHBvaW50cz0iNTkgMTUgNjEgMTUg%0D%0ANjEgMjMgNTkgMjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBm%0D%0AaWxsPSIjNDFDN0M1IiBwb2ludHM9IjYzIDE1IDY1IDE1IDY1IDE3IDYzIDE3Ij48L3BvbHlnb24+%0D%0ACiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iIzA5ODBCMCIgcG9pbnRzPSI2%0D%0ANSAxNSA2NyAxNSA2NyAxNyA2NSAxNyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBp%0D%0AZD0iU2hhcGUiIGZpbGwtb3BhY2l0eT0iMCIgZmlsbD0iIzAwMDAwMCIgcG9pbnRzPSIxMSAxNyAx%0D%0ANSAxNyAxNSAyMyAxMSAyMyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hh%0D%0AcGUiIGZpbGw9IiNGNjg1NEEiIHBvaW50cz0iMjEgMTcgMjUgMTcgMjUgMTkgMjEgMTkiPjwvcG9s%0D%0AeWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjRjVCODhEIiBwb2lu%0D%0AdHM9IjM3IDE3IDM5IDE3IDM5IDIxIDM3IDIxIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5%0D%0AZ29uIGlkPSJTaGFwZSIgZmlsbC1vcGFjaXR5PSIwIiBmaWxsPSIjMDAwMDAwIiBwb2ludHM9IjU1%0D%0AIDE3IDU5IDE3IDU5IDIzIDU1IDIzIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlk%0D%0APSJTaGFwZSIgZmlsbD0iI0EwNTMwNyIgcG9pbnRzPSIxOSAxOSAyMSAxOSAyMSAyMSAyNSAyMSAy%0D%0ANSAxOSAyNyAxOSAyNyAyMyAxOSAyMyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBp%0D%0AZD0iU2hhcGUiIGZpbGw9IiNGQUMyOEMiIHBvaW50cz0iMjEgMTkgMjUgMTkgMjUgMjEgMjEgMjEi%0D%0APjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjRTQ5NDUz%0D%0AIiBwb2ludHM9IjMxIDE5IDMzIDE5IDMzIDIzIDMxIDIzIj48L3BvbHlnb24+CiAgICAgICAgICAg%0D%0AIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0Y5QTE5NCIgcG9pbnRzPSI0NSAxOSA0OSAxOSA0%0D%0AOSAyMSA0NSAyMSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZp%0D%0AbGw9IiNGQUMyOEMiIHBvaW50cz0iNSAyMyA5IDIzIDkgMzAgNSAzMCI+PC9wb2x5Z29uPgogICAg%0D%0AICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiNFNDk0NTMiIHBvaW50cz0iOSAyMyAx%0D%0AMyAyMyAxMyAzMCA5IDMwIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFw%0D%0AZSIgZmlsbD0iIzA5ODBCMCIgcG9pbnRzPSIxMyAyMyAxNyAyMyAxNyAzMCAxMyAzMCI+PC9wb2x5%0D%0AZ29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM0MUM3QzUiIHBvaW50%0D%0Acz0iMTcgMjMgMzEgMjMgMzEgMzMgMTkgMzMgMTkgMzUgMTcgMzUiPjwvcG9seWdvbj4KICAgICAg%0D%0AICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjNTVBMjMzIiBwb2ludHM9IjMxIDIzIDM1%0D%0AIDIzIDM1IDMxIDMxIDMxIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFw%0D%0AZSIgZmlsbD0iIzdCQzU2MSIgcG9pbnRzPSIzNSAyMyAzOSAyMyAzOSAzMSAzNSAzMSI+PC9wb2x5%0D%0AZ29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM1NUEyMzMiIHBvaW50%0D%0Acz0iMzkgMjMgNDEgMjMgNDEgMzEgMzkgMzEiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHln%0D%0Ab24gaWQ9IlNoYXBlIiBmaWxsPSIjN0JDNTYxIiBwb2ludHM9IjQxIDIzIDQzIDIzIDQzIDI1IDQ1%0D%0AIDI1IDQ1IDI3IDQ3IDI3IDQ3IDI1IDQ5IDI1IDQ5IDI3IDUxIDI3IDUxIDI5IDUzIDI5IDUzIDMx%0D%0AIDQxIDMxIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0i%0D%0AI0Y1Qjg4RCIgcG9pbnRzPSI0MyAyMyA0OSAyMyA0OSAyNSA0NyAyNSA0NyAyNyA0NSAyNyA0NSAy%0D%0ANSA0MyAyNSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9%0D%0AIiNGNjlGM0EiIHBvaW50cz0iNDkgMjMgNTMgMjMgNTMgMjkgNTEgMjkgNTEgMjcgNDkgMjciPjwv%0D%0AcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjNTVBMjMzIiBw%0D%0Ab2ludHM9IjUzIDIzIDU3IDIzIDU3IDMwIDUzIDMwIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxw%0D%0Ab2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0Y1Qjg4RCIgcG9pbnRzPSI1NyAyMyA2MSAyMyA2MSAz%0D%0AMCA1NyAzMCI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9%0D%0AIiNGQ0Q4QjAiIHBvaW50cz0iNjEgMjMgNjUgMjMgNjUgMzAgNjEgMzAiPjwvcG9seWdvbj4KICAg%0D%0AICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjRjVCODhEIiBwb2ludHM9IjMxIDMx%0D%0AIDM1IDMxIDM1IDM2IDMxIDM2Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJT%0D%0AaGFwZSIgZmlsbD0iI0ZDRDhCMCIgcG9pbnRzPSIzNSAzMSAzOSAzMSAzOSAzNiAzNSAzNiI+PC9w%0D%0Ab2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiMwMTM0MDEiIHBv%0D%0AaW50cz0iMzkgMzEgNDEgMzEgNDEgMzMgMzkgMzMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBv%0D%0AbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjMjQ2ODA0IiBwb2ludHM9IjQxIDMxIDUzIDMxIDUzIDMz%0D%0AIDQxIDMzIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0i%0D%0AIzA5ODBCMCIgcG9pbnRzPSIxOSAzMyAzMSAzMyAzMSA0MSAxNyA0MSAxNyAzNSAxOSAzNSI+PC9w%0D%0Ab2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM1NUEyMzMiIHBv%0D%0AaW50cz0iMzkgMzMgNDEgMzMgNDEgMzYgMzkgMzYiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBv%0D%0AbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIjN0JDNTYxIiBwb2ludHM9IjQxIDMzIDUzIDMzIDUzIDM2%0D%0AIDQxIDM2Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0i%0D%0AIzI0MjRBRSIgcG9pbnRzPSIzMSAzNiAzNSAzNiAzNSA0MSAzMSA0MSI+PC9wb2x5Z29uPgogICAg%0D%0AICAgICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM4ODJGMDUiIHBvaW50cz0iMzUgMzYg%0D%0ANDEgMzYgNDEgNDEgMzUgNDEiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNo%0D%0AYXBlIiBmaWxsPSIjQTA1MzA3IiBwb2ludHM9IjQxIDM2IDUzIDM2IDUzIDQxIDQxIDQxIj48L3Bv%0D%0AbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iIzcwMzYwNSIgcG9p%0D%0AbnRzPSIxNyA0MSAzMSA0MSAzMSA0NSAxNyA0NSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9s%0D%0AeWdvbiBpZD0iU2hhcGUiIGZpbGw9IiM1MDFDMDMiIHBvaW50cz0iMzEgNDEgMzUgNDEgMzUgNDUg%0D%0AMzEgNDUiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBmaWxsPSIj%0D%0AOEU3QjcxIiBwb2ludHM9IjM1IDQxIDQxIDQxIDQxIDQ1IDM1IDQ1Ij48L3BvbHlnb24+CiAgICAg%0D%0AICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0M2QjZBQiIgcG9pbnRzPSI0MSA0MSA1%0D%0AMyA0MSA1MyA0NSA0MSA0NSI+PC9wb2x5Z29uPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+%0D%0ACg==);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 50px;
+            height: 50px;
+            width: 50px;
+            background-color: transparent !important;
+            z-index: 10;
+            color: transparent !important;
+        }
+
+        .guilds-wrapper .guilds .home-icon:hover {
+            background-image: url(https://minecraft.net/static/theme/img/gif/menu-realms.gif);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 50px;
+            height: 50px;
+            width: 50px;
+            background-color: transparent !important;
+            z-index: 10;
+            color: transparent !important;
+        }
+    
+        svg.home-icon.da-homeIcon {
+            background-color: transparent !important;
+        }
+    
+    
+    
+        a {
+            -webkit-transition: opacity .5s,color .5s;
+            color: rgba(0, 176, 244, 0);
+            cursor: pointer;
+            text-decoration: none;
+            transition: opacity .5s,color .5s;
+        }
+
+        /* line */
+        .guilds-wrapper .guild-separator:after {
+            background: var(--greencolor);
+            content: " ";
+            height: 2px;
+            left: 20%;
+            position: absolute;
+            right: 20%;
+            top: 0;
+        }
+
+        /* background of server list */
+        .guilds-wrapper {
+            -ms-flex-direction: column;
+            -ms-flex-negative: 0;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: vertical;
+            background-color: #202225;
+            contain: layout;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            overflow: hidden;
+            position: relative;
+            width: 70px;
+            background-image: url(https://minecraft.net/static/theme/freyja/img/bg-wool-dark.ddea3e9ef4d4.png);
+        }
+
+        /* Select Server */
+        .guilds-wrapper .guilds .guild.selected:before {
+            border-radius: 0px;
+        }
+
+        .guilds-wrapper .guilds .guild .guild-inner {
+            border-radius: 50px !important;
+        }
+
+/* Windows Title Bar */
+        /* Background */
+        .titleBar-AC4pGV {
+            background-color: black;
+            margin-top: 0px;
+        }
+
+        /* Brand Logo */
+        .wordmark-2iDDfm {
+            visibility: hidden;
+        }
+
+/* Discord Settings */
+        /* Exit Button */
+        .theme-dark .ui-standard-sidebar-view .btn-close {
+            border-color: transparent;
+            background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/ExitButton.gif);
+            background-size: 36px;
+            background-repeat: none !important;
+            border-radius: 0px;
+            background-position: -2px -1px;
+        }
+
+        .ui-standard-sidebar-view .esc-text {
+            font-size: 0px;
+        }
+
+        /* Button, I love pushing buttons */
+        .lookFilled-1Gx00P.colorBrand-3pXr91 {
+            background-color: var(--greencolor);
+            border-radius: 0px;
+        }
+
+        .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+            background-color: var(--greycolor);
+        }
+
+        .lookFilled-1Gx00P.colorBrand-3pXr91:active {
+            background-color: var(--greycolor);
+        }
+
+        /* More Buttons to press */
+        .side-8zPYf6 .itemSelected-1qLhcL {
+            background-color: var(--greencolor);
+            border-radius: 0px;
+        }
+
+        .side-8zPYf6 .itemSelected-1qLhcL:hover {
+            background-color: var(--greencolor);
+            border-radius: 0px;
+        }
+
+        .lookOutlined-3sRXeN.colorRed-1TFJan {
+            border-color: rgba(240,71,71,10.3);
+            color: #f04747;
+            border-radius: 0px;
+        }
+
+        /* Switches */
+        .themeDefault-24hCdX.valueChecked-m-4IJZ {
+            background-color: var(--greycolor);
+            border-radius: 0px;
+        }
+
+        .themeDefault-24hCdX.valueChecked-m-4IJZ {
+             background-color: var(--greycolor);
+             width: 25px;
+        }
+
+        .valueChecked-m-4IJZ.sizeDefault-2YlOZr:after {
+            background-color: var(--greencolor);
+            border-radius: 0px;
+            margin-left: -14.7px;
+        }
+
+        .themeDefault-24hCdX {
+            background-color: var(--greycolor);
+        }
+
+        .valueUnchecked-2lU_20:after {
+            background-color: grey;
+            border-radius: 0px;
+        }
+
+        .themeDefault-24hCdX.sizeDefault-2YlOZr {
+            width: 25px;
+            border-radius: 0px
+        }
+
+
+/* Channel List */
+.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
+    background-color: transparent;
+}
+
+.nameConnectedText-3CzNQn, .nameConnectedVoice-MHUX5F, .nameSelectedText-sp_EUw, .nameSelectedVoice-1qSph5 {
+    color: var(--greencolor);
+}
+
+.contentConnectedVoice-qL-YrL:active, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM:active {
+    background-color: black;
+    border-radius: 0px;
+    color: white;
+}
+
+.unread-1Dp-OI {
+    border-radius: 0px;
+    background-color: white;
+}
+
+    /* background */
+    .container-PNkimc {
+        background-color: rgb(33, 33, 33);
+        contain: layout;
+        min-height: 0;
+        position: relative;
+    }
+
+    .container-2Thooq {
+        background: rgba(32, 34, 37, 0.99);
+    }
+
+    /* Server Name */
+    .header-2o-2hj {
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+    }
+
+
+
+/* Image viewing */
+.downloadLink-1ywL9o {
+    text-align: center;
+    width: 100px;
+    opacity: 1;
+    margin-left: 46%;
+    background-color: white;
+    color: black;
+}
+
+/* Wumpus, but it's Minecraft */
+.empty-state-image.da-emptyStateImage {
+    background-image: url(https://minecraft.net/static/pages/img/servers/servers-hub-1.0b16f8147a1c.png) !important;
+    background-size: 500px !important;
+    width: 1000px !important;
+    height: 900px !important;
+}
+
+#friends .friends-empty p {
+    font-size: 0px;
+}
+
+/* Profile Modal */
+    /* Header */
+    .theme-dark .topSectionNormal-2-vo2m {
+        background-image: var(--pixelbackgroud);
+    }
+
+    .tabBarContainer-1s1u-z {
+        border-top: 1px solid hsla(0, 0%, 100%, 0);
+        padding-left: 20px;
+    }
+
+    .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+        background-color: var(--greycolor);
+        border-radius: 0px;
+    }
+
+    .lookFilled-1Gx00P.colorGreen-29iAKY {
+        background-color: var(--greencolor);
+        border-radius: 0px;
+    }
+
+    .lookFilled-1Gx00P.colorGreen-29iAKY:active {
+        background-color: var(--greycolor);
+        border-radius: 0px;
+    }
+
+    /* User Info */
+    .theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
+        border-color: transparent !important;
+        border-radius: 0px;
+    }
+
+
+/* Games Tab */
+    /* Top of the game tab */
+    .paginationItem-3-MBTL:before {
+        border-radius: 0px !important;
+        border-color: white !important;
+    }
+
+    .article-FleDq5 {
+        border-radius: 0px !important;
+    }
+
+    /* Theming the top news like it is on Minecraft.net, let's hope this works */
+    .description-12ntlD {
+        font-size: 0px;
+    }
+
+    .timestamp-2TSQfJ {
+        font-size: 0px;
+    }
+
+    .gameName-ZXDRa6 {
+        color: black !important;
+        background-color: white;
+        width: 150px;
+        text-align: center;
+        margin-left: 40%;
+    }
+
+    .title-bYqmgP {
+        text-align: center;
+    }
+
+/* Chat */
+    /* Background */
+    .theme-dark .chat>.content, .theme-dark .chat form {
+        background-color: #272727;
+    }
+
+    .theme-dark .friends-table, .theme-dark .messages-wrapper {
+        background-color: #272727;
+    }
+
+    /* Scrollbar */
+    .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
+        background-color: var(--greycolor) !important;
+        border-color: transparent !important;
+        border: 0px !important;
+    }
+
+    /* Text box, that thing you type in to say YO MOM GAY */
+    .theme-dark .inner-zqa7da {
+        border-radius: 0px !important;
+        background-color: var(--greycolor);
+    }
+
+    /* Lines */
+    .theme-dark .message-group:not(.has-divider) {
+        border-bottom-color: var(--greycolor);
+    }
+
+/* Channel Header */
+    /* Background */
+    .theme-dark .title-3qD0b- {
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+        background: #232323;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+    }
+
+/* Members Tab */
+    /* Background */
+    .theme-dark .members-1998pB {
+        background-color: #252525;
+    }
