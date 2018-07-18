@@ -5,30 +5,6 @@
 :root {
     --version: "You're using version 1.0.81 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
-    --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
-
-
-
-    /* Change Log - Used in Help Modal */
-    --logicon: url(g.iconForeground-3y9f0B.da-iconForeground);
-    --line1: " - Accent background option added and it's back!";
-    --line2: " - Accent text color(for accent background color) option added";
-    --line3: " - Colors in the status picker can now be changed";
-    --line4: " - You can now change the default font in Discord";
-    --line5: " - Emoji tab has finally been themed";
-    --line6: " - In macOS, the pop up bug resolved itself and the title bar is fixed";
-    --line7: " - Scrollbar should be no where to be seen";
-    --line8: " - Border Radius status mini theme(by Sato) has been added to Expose X";
-    --line9: " - Chat, friends list, and the server list has been tweaked";
-    --line10: " - Unread channels will have a white circle";
-    --line11: " - Read channels should have no # or anything at all by it";
-    --line12: " - Dates and the new message text has been moved to the left";
-    --line13: " - More borders were reoved for more freedom";
-    --line14: " - The indicator for selected server has been changed";
-    --line15: " - Some icons are white now along with a new change log icon";
-    --line16: " - Fonts in most places are white now";
-    
-
 }
 
 /* for Expose X news | news for Expose X is rare so don't worry about it */
