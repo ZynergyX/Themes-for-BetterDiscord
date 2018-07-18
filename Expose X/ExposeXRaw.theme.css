@@ -1,7 +1,30 @@
 :root {
-    --version: "You're using version 1.0.8 of Expose X";
+    --version: "You're using version 1.0.81 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
+
+
+
+    /* Change Log - Used in Help Modal */
+    --logicon: url(g.iconForeground-3y9f0B.da-iconForeground);
+    --line1: " - Accent background option added and it's back!";
+    --line2: " - Accent text color(for accent background color) option added";
+    --line3: " - Colors in the status picker can now be changed";
+    --line4: " - You can now change the default font in Discord";
+    --line5: " - Emoji tab has finally been themed";
+    --line6: " - In macOS, the pop up bug resolved itself and the title bar is fixed";
+    --line7: " - Scrollbar should be no where to be seen";
+    --line8: " - Border Radius status mini theme(by Sato) has been added to Expose X";
+    --line9: " - Chat, friends list, and the server list has been tweaked";
+    --line10: " - Unread channels will have a white circle";
+    --line11: " - Read channels should have no # or anything at all by it";
+    --line12: " - Dates and the new message text has been moved to the left";
+    --line13: " - More borders were reoved for more freedom";
+    --line14: " - The indicator for selected server has been changed";
+    --line15: " - Some icons are white now along with a new change log icon";
+    --line16: " - Fonts in most places are white now";
+    
+
 }
 
 /* for Expose X news | news for Expose X is rare so don't worry about it */
@@ -133,10 +156,6 @@ background-position: center !important;
 
 .lookLink-9FtZy-.colorLink-35jkBc {
     color: var(--accentcolor);
-}
-
-.need-help-modal.deprecated .header {
-    background-color: var(--accentcolor);
 }
 
 .theme-dark .embedTitleLink-1Zla9e {
@@ -690,7 +709,7 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     font-weight: 500;
     -webkit-app-region: drag;
     position: fixed;
-    margin-top: 490px;
+    margin-top: 500px;
     margin-left: 100px;
 }
 
@@ -2343,6 +2362,82 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     border-bottom: 1px solid rgba(54, 57, 63, 0);
 }
 
+
+
+
+
+
+
+/* Expose X Change Log Modal (AKA Help Modal) */
+.need-help-modal.deprecated a:hover {
+    font-size: 0px;
+}
+
+.need-help-modal.deprecated a {
+    font-size: 0px;
+}
+
+.need-help-modal.deprecated .footer {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    border-top: 0px solid #e9e7e7;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    font-size: 0px;
+    font-weight: 500;
+    padding: 20px 0 20px 38px;
+}
+
+.need-help-modal.deprecated .header {
+    height: 55px !important;
+}
+
+.need-help-modal.deprecated .header {
+    background-color: #ffffff;
+}
+
+.need-help-modal.deprecated .header h1 {
+    font-size: 0px;
+}
+
+.need-help-modal.deprecated .header h1::before {
+    content: "Expose X Change Log";
+    color: black !important;
+    font-size: 15px;
+    top: 10px !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.need-help-modal.deprecated .header input[type=text] {
+    visibility: hidden;
+}
+
+g.iconForeground-3y9f0B.da-iconForeground {
+    d: M170 225 l0 -25 155 0 155 0 0 25 0 25 -155 0 -155 0 0 -25z !important;
+}
+
+.icon-1R19_H[name="QuestionMark"] {
+    background-image: url("https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/Expose%20X%20Theme%20for%20Better%20Discord/icons8-index-52%20(1).png");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-1R19_H[name="QuestionMark"] path{display: none;}
+
+.form-inner.loading.da-formInner.da-loading {
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/Expose%20X%20Theme%20for%20Better%20Discord/changelog.png);
+    background-size: 895px;
+}
+
+
+
 /* ============================================================================ */
 /* PLUGINS */ /*PLUGINS*/ /* PLUGINS */ /*PLUGINS*/ /* PLUGINS */ /*PLUGINS*/
 
@@ -2518,6 +2613,7 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 .bf-toolbar .format:hover {
     border-radius: 50px;
 }
+
 
 /* */
 .lookInverted-2D7oAl.colorBrand-3pXr91 {
