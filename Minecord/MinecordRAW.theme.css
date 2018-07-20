@@ -4,10 +4,10 @@
     --greencolor: #36B030;
     --greycolor: rgb(49, 49, 49);
     --pixelbackgroud: url(https://minecraft.net/static/theme/freyja/img/bg-wool-dark.ddea3e9ef4d4.png);
-    --version: "Minecord v0.0.1";
+    --version: "Minecord v0.0.2";
 }
 
-/* v */
+/* Version Number  - Only will appear in Windows for now */
 .app::before {
     content: var(--version);
     color: white;
@@ -18,9 +18,9 @@
     position: fixed;
     z-index: 10000;
     top: 8.5px;
-    left: 7px;
-    background-color: black;
+    left: 5px;
 }
+
 
 /* Server list */
         /* Home Icon */
@@ -106,17 +106,14 @@
             border-radius: 50px !important;
         }
 
-/* Windows Title Bar */
-        /* Background */
-        .titleBar-AC4pGV {
-            background-color: black;
-            margin-top: 0px;
+        /* Unread Server */
+        .guilds-wrapper .guilds .guild.unread:before {
+            background: #ffffff;
+            border-radius: 0px;
+            height: 10px;
+            margin-top: -6px;
         }
 
-        /* Brand Logo */
-        .wordmark-2iDDfm {
-            visibility: hidden;
-        }
 
 /* Discord Settings */
         /* Exit Button */
@@ -218,14 +215,14 @@
 
     /* background */
     .container-PNkimc {
-        background-color: rgb(33, 33, 33);
+        background-color: rgb(28, 28, 28);
         contain: layout;
         min-height: 0;
         position: relative;
     }
 
     .container-2Thooq {
-        background: rgba(32, 34, 37, 0.99);
+        background: rgba(28, 28, 28, 0.99);
     }
 
     /* Server Name */
@@ -233,30 +230,6 @@
         -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
     }
-
-
-
-/* Image viewing */
-.downloadLink-1ywL9o {
-    text-align: center;
-    width: 100px;
-    opacity: 1;
-    margin-left: 46%;
-    background-color: white;
-    color: black;
-}
-
-/* Wumpus, but it's Minecraft */
-.empty-state-image.da-emptyStateImage {
-    background-image: url(https://minecraft.net/static/pages/img/servers/servers-hub-1.0b16f8147a1c.png) !important;
-    background-size: 500px !important;
-    width: 1000px !important;
-    height: 900px !important;
-}
-
-#friends .friends-empty p {
-    font-size: 0px;
-}
 
 /* Profile Modal */
     /* Header */
@@ -284,6 +257,15 @@
         border-radius: 0px;
     }
 
+    .additionalActionsIcon-1FoUlE {
+        background: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/Menu%20Button.png) !important;
+        filter: brightness(100000);
+    }
+
+    .topSectionNormal-2-vo2m .profileBadgePremium-3kZ9Qj {
+        background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/Nitro.png) !important;
+    }
+
     /* User Info */
     .theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
         border-color: transparent !important;
@@ -302,6 +284,14 @@
         border-radius: 0px !important;
     }
 
+    /* Background */
+    .theme-dark .activityFeed-28jde9 {
+        background-color: #252525;
+    }
+
+    /* Game */
+
+
     /* Theming the top news like it is on Minecraft.net, let's hope this works */
     .description-12ntlD {
         font-size: 0px;
@@ -312,8 +302,7 @@
     }
 
     .gameName-ZXDRa6 {
-        color: black !important;
-        background-color: white;
+        color: white !important;
         width: 150px;
         text-align: center;
         margin-left: 40%;
@@ -321,6 +310,16 @@
 
     .title-bYqmgP {
         text-align: center;
+    }
+
+    /* Cards on side */
+    .paginationGameName-3Fd-qy {
+        color: #72767d;
+        font-size: 12px;
+        margin-top: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
 /* Chat */
@@ -332,6 +331,33 @@
     .theme-dark .friends-table, .theme-dark .messages-wrapper {
         background-color: #272727;
     }
+
+    /* Welcome to your server icons */
+    .exclamation-1mi7Vi {
+        filter: hue-rotate(250deg) !important;
+    }
+
+    .share-1EA-d2 {
+        filter: hue-rotate(250deg) !important;
+    }
+
+    .mobile-3_KEmF {
+        filter: hue-rotate(250deg) !important;
+    }
+
+    .twitter-1TN3uJ {
+        filter: hue-rotate(250deg) !important;
+    }
+
+    .app .welcomeMessage-3_Mcht h1 {
+        color: #47a358;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+
 
     /* Scrollbar */
     .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
@@ -359,8 +385,531 @@
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
     }
 
+    /* Height and stuff */
+    .title-3qD0b-, .titleCall-_b9o8P {
+        height: 58px;
+    }
+
+    /* Right side of header */
+    .iconMargin-2YXk4F {
+        margin: 0 10px;
+    }
+
+
+
 /* Members Tab */
     /* Background */
     .theme-dark .members-1998pB {
         background-color: #252525;
     }
+
+/* Context Menu */
+.theme-dark .itemGroup-1tL0uz {
+    border-color: hsla(0, 0%, 96%, 0);
+}
+
+.contextMenu-HLZMGh {
+    border-radius: 0px;
+}
+
+.item-1Yvehc {
+    border-radius: 0px;
+}
+
+/* Tooltip */
+.tooltip.tooltip-black.tooltip-right:after {
+    border-right-color: transparent;
+}
+
+.tooltip {
+    border-radius: 0px;
+}
+
+.tooltip.tooltip-black.tooltip-top:after {
+    border-top-color: rgba(0, 0, 0, 0);
+}
+
+.tooltip.tooltip-black.tooltip-left:after {
+    border-top-color: rgba(0, 0, 0, 0);
+}
+
+.tooltip.tooltip-black.tooltip-bottom:after {
+    border-top-color: rgba(0, 0, 0, 0);
+}
+
+.tooltip.tooltip-black.tooltip-bottom:after {
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+/* Typing Modal */
+.theme-dark .typing-2GQL18 {
+    background-color: rgba(185, 196, 218, 0);
+}
+
+.spinner-pulsing-ellipsis .spinner-item {
+    -webkit-animation: spinner-ellipsis 1.4s infinite ease-in-out;
+    animation: spinner-ellipsis 1.4s infinite ease-in-out;
+    background-color: #99aab5;
+    border-radius: 0px;
+    display: inline-block;
+    height: 6px;
+    margin-right: 2px;
+    opacity: .3;
+    width: 6px;
+}
+
+/* Server Drop Down Menu */
+.theme-dark .separator-2zcjq8 {
+    border-bottom-color: hsla(0, 0%, 96%, 0);
+}
+
+.header-2o-2hj {
+    height: 57px !important;
+}
+
+.popout-3sVMXz {
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1);
+    -webkit-filter: blur(0);
+    border-radius: 0px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 1px 4px rgba(0,0,0,.1);
+    contain: layout;
+    padding: 0;
+    z-index: 1000;
+}
+
+.popout-3sVMXz.popoutBottom-1YbShG.popoutbottom.da-popout.da-popoutBottom.da-popoutbottom {
+    width: 239px !important;
+    top: 52px !important; 
+}
+
+.menu-Sp6bN1 {
+    border-radius: 0px;
+    overflow: hidden;
+    width: 239px;
+}
+
+/* Upload Menu over text box */
+.theme-dark .attachPopout-1n-ZKM {
+    background-color: #313131;
+}
+
+.attachPopout-1n-ZKM {
+    border-radius: 0px;
+}
+
+.noArrow-3BYQ0Z.noShadow-321ZPm.popout-3sVMXz.popoutTopLeft-b5Eb3O.popouttop-left.da-noArrow.da-noShadow.da-popout.da-popoutTopLeft.da-popouttopLeft {
+    top: 990px !important;
+    left: 330px !important;
+}
+
+.popout-3sVMXz {
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    -webkit-filter: blur(0);
+    border-radius: 0px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    contain: layout;
+    padding: 0;
+    z-index: 1000;
+}
+
+.attachPopoutRow-KrE-f6 {
+    -webkit-transition: background-color .2s ease;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color .2s ease;
+}
+
+
+
+
+/*=============================================
+=               Status Picker                 =          created by FroztySeven
+=                                             =               modified by Corbs
+=============================================*/
+
+.popout-3sVMXz.popoutTop-3uu9vG-left {
+    box-shadow: none;
+}
+@keyframes status-picker-bg {
+    to {
+    }
+}
+
+.menu-Sp6bN1.alt-3btY0e   {
+background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/statusbg.png);
+opacity: 1 !important;
+background-color: black;
+background-size: 1000px;
+background-repeat: no-repeat !important;
+background-position: center !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e {
+    animation: status-picker-bg 200ms linear;
+    animation-fill-mode: forwards;
+    background-color:transparent;
+    box-shadow: 0!important;
+    border-radius: 0;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    position: fixed;
+    pointer-events: inherit;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+    z-index: 1000000;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl {
+    transform: scale(1.5) !important;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 3px;
+    width: auto;
+	display: inline-block;
+    background: transparent !important;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    transition: all 0.2s ease!important;
+}
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover {
+    background: transparent !important;
+}
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:active {
+    background: transparent !important;
+    margin-top: 10px;
+}
+.menu-Sp6bN1.alt-3btY0e .separator-2zcjq8 {
+	display: none;
+}
+.menu-Sp6bN1.alt-3btY0e .status {
+	border-radius: 0;
+	width: 55px;
+	height: 55px;
+	box-sizing: border-box;
+	pointer-events: initial;
+	opacity: 1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	filter: brightness(87.5%);
+    will-change: transform;
+    margin-right: 0!important;
+    backface-visibility: initial;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+@keyframes statuspicker-status {
+    from {
+        opacity: 0;
+        transform: translate(0, 50%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl .status {
+    border-radius: 100px;
+    transition: all 0.2s ease!important;
+}
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl .status:hover {
+    transition: all 0.2s ease!important;
+}
+.menu-Sp6bN1.alt-3btY0e .status-3fQvEa {
+    padding: 20px;
+}
+.alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH > div {
+    font-size: 0px;
+    margin-left: 0px;
+}
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(1) .status {
+    z-index: 5;
+    background-color: transparent !important;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.alt-3btY0e .item-1GzJrl:nth-of-type(1) .statusIconText-3b4TkH > div {
+    color: transparent !important;
+    border-radius: 0px !important;
+    height: 10px;
+    background-color: transparent !important;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/Online.png) !important;
+    background-size: 55px !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(3) .status {
+    z-index: 4;
+    background-color: #faa61a;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(3) .statusIconText-3b4TkH > div {
+    color: transparent !important;
+    border-radius: 0px !important;
+    height: 10px;
+    background-color: transparent !important;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/Idle.png) !important;
+    background-size: 55px !important;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(4) .status {
+    z-index: 3;
+    background-color: #f04747;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(4) .statusIconText-3b4TkH > div {
+    color: transparent !important;
+    border-radius: 0px !important;
+    height: 10px;
+    background-color: transparent !important;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/DND.png) !important;
+    background-size: 55px !important;
+}
+
+.alt-3btY0e .item-1GzJrl .helper-2c73HK {
+    opacity: 0;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(4) .helper-2c73HK  {
+    display: flex;
+    align-items: center;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(4):hover .helper-2c73HK  {
+    background-color: #C03F3F;
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    height: 20px;
+    padding: 12px 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    pointer-events: none;
+    opacity: 1;
+    animation: statuspicker-status 300ms ease;
+    visibility: hidden;
+}
+
+.menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(5) .status {
+	z-index: 2;
+    background-color: #57616D;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(5) .statusIconText-3b4TkH > div {
+    color: transparent !important;
+    border-radius: 0px !important;
+    height: 10px;
+    background-color: transparent !important;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/for%20Minecord/Offline.png) !important;
+    background-size: 55px !important;
+}
+.alt-3btY0e .item-1GzJrl:last-child .helper-2c73HK:last-child {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    visibility:  hidden;
+}
+.alt-3btY0e .item-1GzJrl:nth-of-type(5):hover .helper-2c73HK:last-child  {
+    background-color: #3A3E43;
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    height: 20px;
+    padding: 12px 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    pointer-events: none;
+    opacity: 1;
+    animation: statuspicker-status 300ms ease;
+}
+
+/* New Message / You're viewing older messages... - Blue Bar */
+.chat .new-messages-bar {
+    -webkit-transition: background-color .2s;
+    background-color: rgb(35, 35, 35);
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+    left: 0px;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+    top: 0;
+    transition: background-color .2s;
+    z-index: 2;
+    width: 100%;
+}
+
+.chat .new-messages-bar:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.chat .new-messages-bar button:last-child {
+    -webkit-transition: color .2s;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+
+.chat .jump-to-present-bar {
+    -webkit-transition: background-color .2s;
+    background-color: rgb(35, 35, 35);
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+    left: 0px;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+    transition: background-color .2s;
+    z-index: 2;
+    width: 100%;
+}
+
+.theme-dark .chat .jump-to-present-bar {
+    background-color: rgb(37, 37, 37);
+}
+
+.theme-dark .chat .jump-to-present-bar:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+/* Friends List */
+    /* Background Color */
+    .channels-Ie2l6A {
+        -ms-flex-negative: 0;
+        background-color: #1b1b1b;
+        flex-shrink: 0;
+        width: 240px;
+    }
+
+    /* Top Bar */
+    .theme-dark .headerBar-UHpsPw {
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+        background: #272727;
+        box-shadow: 0px 2px 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 0);
+    }
+
+    .theme-dark #friends {
+        background-color: #272727;
+    }
+
+    /* Buttons */
+    .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+        background-color: var(--greencolor);
+    }
+
+    .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+        background-color: var(--greencolor);
+    }
+
+    .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+        background-color: var(--greycolor);
+        color: white;
+    }
+
+    /* List */
+    .theme-dark #friends .friends-table .friends-table-header .friends-column-separator {
+        background-color: hsla(0, 0%, 100%, 0);
+    }
+
+    
+
+    /* title bar */   /* part token from .intrnl titlebar revert theme, tweaked by Corbs */
+
+      .title-3qD0b- .flex-1xMQg5.horizontal-1ae9ci, .titleCall-_b9o8P .flex-1xMQg5.horizontal-1ae9ci, .headerBar-UHpsPw .flex-1xMQg5.horizontal-1ae9ci {
+        margin-right: 98px; }
+        .title-3qD0b- .flex-1xMQg5.horizontal-1ae9ci:after, .titleCall-_b9o8P .flex-1xMQg5.horizontal-1ae9ci:after, .headerBar-UHpsPw .flex-1xMQg5.horizontal-1ae9ci:after {
+          content: ' ';
+          height: 22px;
+          width: 1px; }
+          .theme-dark .title-3qD0b- .flex-1xMQg5.horizontal-1ae9ci:after, .theme-dark .titleCall-_b9o8P .flex-1xMQg5.horizontal-1ae9ci:after, .theme-dark .headerBar-UHpsPw .flex-1xMQg5.horizontal-1ae9ci:after {
+            background-color: rgba(247, 247, 248, 0.1); }
+          .theme-light .title-3qD0b- .flex-1xMQg5.horizontal-1ae9ci:after, .theme-light .titleCall-_b9o8P .flex-1xMQg5.horizontal-1ae9ci:after, .theme-light .headerBar-UHpsPw .flex-1xMQg5.horizontal-1ae9ci:after {
+            background-color: rgba(114, 118, 126, 0.3); }
+
+            .wordmark-2iDDfm {
+                visibility: hidden;
+            }
+
+            .typeWindows-1za-n7 {
+                height: 0px;
+                margin-top: 4px;
+            }
+
+            .winButton-iRh8-Z {
+                -webkit-app-region: no-drag;
+                cursor: pointer;
+                height: 22px;
+                opacity: .6;
+                pointer-events: auto;
+                position: relative;
+                top: -4px;
+                width: 32px;
+                margin-top: 22px;
+                right: 5px;
+            }
+
