@@ -1,12 +1,16 @@
-//META{"name":"Expose X","description":" Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs","version":"AutoUpdate"}*//{}
+//META{"name":"Expose X","description":"Expose X is a clean theme for Discord. It allows customization like accent colors, custom fonts, color change, and more to come in the future. Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs#0001","version":"AutoUpdate"}*//{}
 @import url(https://cdn.rawgit.com/CorbsEditor/Themes-for-BetterDiscord/master/Expose%20X/ExposeXRaw.theme.css);
 
-:root {  /* Change the custom background and accent color here and even more! */
+:root { 
+    
+    /* CHANGE BACKGROUND HERE */
     --custombackground: url(IMAGEURL);
+
+    /* Accent Colors */
     --accentcolor: #738bd7;   /* To reset the color back to default, use #738bd7 */
     --accenttext: white; /* Use this to change the text colors that are on top of the accentcolor, this is to help make text readable if you're using a bright accent color */
     
-       /* FONTS MY DUDES */ /* "Whitney" is the default font in Discord */
+    /* Fonts */
     --fontchat: Whitney;
     --fontcategoryname: Whitney;
     --fontrolename: Whitney;
@@ -14,7 +18,7 @@
     --fonttooltip: Whitney;
     --fontusername: Whitney;
     
-        /* Make custom status colors here, you're online? */
+    /* Status Colors */
     --online: rgb(71, 191, 71);
     --idle: yellow;
     --dnd: red;
