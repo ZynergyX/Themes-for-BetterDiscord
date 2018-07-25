@@ -1,30 +1,7 @@
 :root {
-    --version: "You're using version 1.0.81 of Expose X";
+    --version: "You're using version 1.0.82 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
-
-
-
-    /* Change Log - Used in Help Modal */
-    --logicon: url(g.iconForeground-3y9f0B.da-iconForeground);
-    --line1: " - Accent background option added and it's back!";
-    --line2: " - Accent text color(for accent background color) option added";
-    --line3: " - Colors in the status picker can now be changed";
-    --line4: " - You can now change the default font in Discord";
-    --line5: " - Emoji tab has finally been themed";
-    --line6: " - In macOS, the pop up bug resolved itself and the title bar is fixed";
-    --line7: " - Scrollbar should be no where to be seen";
-    --line8: " - Border Radius status mini theme(by Sato) has been added to Expose X";
-    --line9: " - Chat, friends list, and the server list has been tweaked";
-    --line10: " - Unread channels will have a white circle";
-    --line11: " - Read channels should have no # or anything at all by it";
-    --line12: " - Dates and the new message text has been moved to the left";
-    --line13: " - More borders were reoved for more freedom";
-    --line14: " - The indicator for selected server has been changed";
-    --line15: " - Some icons are white now along with a new change log icon";
-    --line16: " - Fonts in most places are white now";
-    
-
 }
 
 /* for Expose X news | news for Expose X is rare so don't worry about it */
@@ -38,6 +15,98 @@
     z-index: 10000;
     bottom: 0px;
     background-color: black;
+}
+
+/* LOADING & INIT ANIMATIONS */ /* Loading animation from ClearVision theme */
+.app,
+body::after {
+    -webkit-animation: cv-fade 2s ease-out;
+    animation: cv-fade 2s ease-out;
+}
+
+@-webkit-keyframes cv-fade {
+    0% {
+        opacity: 0;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+    70% {
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cv-fade {
+    0% {
+        opacity: 0;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+    }
+    70% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#app-mount::before {
+    content: "";
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    pointer-events: none;
+    -webkit-animation: cv-bg 3.5s ease-in-out;
+    animation: cv-bg 3.5s ease-in-out;
+}
+
+@-webkit-keyframes cv-bg {
+    0% {
+        background-image: var(--backgroundimage);
+        opacity: 1;
+    }
+    
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes cv-bg {
+    0% {
+        background-image: var(--backgroundimage);
+        opacity: 1;
+    }
+    
+    100% {
+        background-color: transparent;
+    }
+}
+
+#app-mount::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100vh;
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+    -webkit-animation: cv-init 3s ease-in-out;
+    animation: cv-init 3s ease-in-out;
 }
 
 /* for custom status colors */
@@ -681,6 +750,10 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     margin-left: 12px;
 }
 
+.theme-dark .textArea-2Spzkt::placeholder {
+    color: transparent !important;
+}
+
 /* Hamburger menu | Message */
 
 .small-popout-box {
@@ -1179,6 +1252,11 @@ background-position: center !important;
     padding: 5px 10px;
     padding-left: 30px!important;
     width: auto;
+    
+}
+
+.theme-dark .dividerEnabled-2TTlcf {
+    border-bottom-color: hsla(0, 0%, 100%, 0);
 }
 
 .chat .divider {
@@ -1223,21 +1301,14 @@ background-position: center !important;
 
 
 /* Avatars in Chat */
-
-.chat .avatar-large {
-    -webkit-transition: opacity .2s ease;
-    cursor: pointer;
-    opacity: 1;
-    transition: all 0.2s cubic-bezier(0, 1.17, 0.99, 0.06) !important;
+.large-3ChYtB:hover {
+    transform: scale(1.05);
+    transition: transform .5s;
 }
 
-
-.chat .avatar-large:hover {
-    -webkit-transition: opacity .2s ease;
-    cursor: pointer;
-    opacity: 1;
-    transform: scale(1.1);
-    transition: all 1s cubic-bezier(0, 1.17, 0.99, 0.10) !important;
+.large-3ChYtB {
+    transform: scale(1);
+    transition: transform .5s;
 }
 
 /* Messages */
@@ -1608,6 +1679,21 @@ background-position: center !important;
     font-size: 0px;
 }
 /* end of create or join guild */
+
+/* Spotf */
+.theme-dark .listeningAlong-2UPsxf {
+    background-color: rgba(32, 34, 37, 0);
+}
+
+.listeningAlong-2UPsxf {
+    -ms-flex-negative: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    padding: 12px 10px;
+    width: 100%;
+}
 
 /* Add Server Icon */
 
@@ -2405,15 +2491,6 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     font-size: 0px;
 }
 
-.need-help-modal.deprecated .header h1::before {
-    content: "Expose X Change Log";
-    color: black !important;
-    font-size: 15px;
-    top: 10px !important;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
 .need-help-modal.deprecated .header input[type=text] {
     visibility: hidden;
 }
@@ -2621,6 +2698,227 @@ g.iconForeground-3y9f0B.da-iconForeground {
     color: #7289da;
 }
 
+/* SETTINGS TAB BAR */   /* from ClearVision Theme */ /* Icons not by Corbs */
+.ui-standard-sidebar-view .sidebar-region [class*="scroller-"] {
+    margin: 30px 0;
+    -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, transparent 100%);
+}
+.ui-standard-sidebar-view .sidebar-region [class*="scroller-"]::-webkit-scrollbar {
+    display: none;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar {
+    height: 100%;
+    padding: 0 6px 0 20px;
+}
+.ui-standard-sidebar-view .sidebar-region [class*="side-"] {
+    padding: 30px 0;
+}
+.tab-bar.SIDE .tab-bar-item,
+.ui-tab-bar.SIDE .ui-tab-bar-item,
+.ui-standard-sidebar-view .ui-tab-bar.SIDE .ui-tab-bar-item::after {
+    -webkit-transition: color .3s ease-in-out, opacity .3s ease-in-out;
+    transition: color .3s ease-in-out, opacity .3s ease-in-out;
+}
+.ui-standard-sidebar-view .sidebar-region-scroller [class*="item"] {
+    padding: 8px 0 8px 20px;
+    margin: 0;
+    cursor: pointer !important;
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item {
+    color: hsla(0, 0%, 100%, 0);
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected,
+.ui-tab-bar.SIDE .ui-tab-bar-item:active {
+    color: #fff;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"],
+#bd-settings-sidebar .ui-tab-bar-item {
+    color: hsla(0, 0%, 100%, 1) !important;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:hover,
+#bd-settings-sidebar .ui-tab-bar-item:hover {
+    color: hsla(0, 0%, 100%, 1) !important;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"][class*="selected-"],
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+    background-color: var(--main-color);
+    color: #fff !important;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"],
+#bd-settings-sidebar .ui-tab-bar-item {
+    padding-left: 50px;
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar [class*="itemDanger"]:hover {
+    background-color: #a93d3d;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]::after,
+#bd-settings-sidebar .ui-tab-bar-item::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 15px;
+    margin-top: -2px;
+    opacity: 1;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:hover::after {
+    opacity: 1;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"][class*="selected-"]::after,
+#bd-settings-sidebar .ui-tab-bar-item.selected::after {
+    opacity: 1;
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(2)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg);
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(3)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(9)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg);
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(4)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/apps.svg);
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(5)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(6)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg);
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"][class*="Brand"]::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/speed.svg);
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(10)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(11)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(12)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(11)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(13)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(12)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(14)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(13)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(15)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(14)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(16)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(15)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(17)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(16)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(18)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(17)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg);
+}
+.platform-win [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(21)::after,
+.platform-osx [layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="item"]:nth-child(20)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(4)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg);
+}
+[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller .sidebar > * > [class*="itemDanger"]::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg);
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(2)::after  {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg);
+}
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(3)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/message.svg);
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(3)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(5)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/assignment.svg);
+}
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(7)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg);
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(5)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(8)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/webhook.svg);
+}
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(12)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/group.svg);
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(4)::after,
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(13)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/share.svg);
+}
+[layer-id="server-settings"] .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:nth-child(14)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/block.svg);
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller [class*="item"]:last-child::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/delete.svg);
+}
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/betterdiscord.svg);
+}
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg);
+}
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/code.svg);
+}
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg);
+}
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
+    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/palette.svg);
+}
+.ui-sidebar .ui-tab-bar.SIDE .ui-tab-bar-item{
+    border-radius: 3px;
+}
+.ui-sidebar .ui-tab-bar.SIDE .ui-tab-bar-item.selected,
+.bd-blue .ui-sidebar .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
+    background: var(--main-color);
+}
+.social-links-link {
+    opacity: 1;
+    -webkit-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+}
+
+.social-links-link .ui-icon-fg {
+    fill: #fff !important;
+}
+
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list {
+    box-shadow: 0 -1px hsla(0, 0%, 100%, .04);
+}
+.connection .checkbox .checkbox-inner {
+    background-color: transparent;
+}
+.connection .checkbox .checkbox-inner input[type=checkbox] + span {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    width: 35px;
+}
+.connection .checkbox .checkbox-inner input[type=checkbox]:checked + span {
+    width: 0;
+    margin-left: 35px;
+}
+.connection .checkbox .checkbox-inner input[type=checkbox]:checked + span::after {
+    margin-left: -20px !important;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-header .btn-delete {
+    transition: all .1s ease-in-out;
+    mix-blend-mode: screen;
+}
+
+.theme-dark .header-2RyJ0Y {
+    color: #ffffff;
+}
+
 /* Switch */
    /* Discord Settings */
    
@@ -2665,7 +2963,14 @@ g.iconForeground-3y9f0B.da-iconForeground {
     margin-right: 6px;
 }
 
+/* Search Bar */
+.search .search-bar {
+    width: 34px;
+}
 
+.search .search-bar-icon:active {
+    visibility: hidden;
+}
 
 /* You're viewing older/ messages */
 
@@ -2972,6 +3277,38 @@ button#dl-log-button {
 .scrollerWrap-2uBjct.content-1Cut5s.scrollerThemed-19vinI.themeGhostHairline-2H8SiW.da-scrollerWrap.da-content.da-scrollerThemed.da-themeGhostHairline {
     color: white;
     background-color: darkslategray;
+}
+
+/* Share Button */
+
+.sb-menu-backdrop.da-sbMenuBackdrop {
+    background-image: var(--backgroundimage) !important;
+    background-color: black;
+}
+
+.sb-menu-scroller-wrapper {
+    width: 800px;
+    min-height: 800px;
+    max-height: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(47, 49, 54, 0.75);
+    border-radius: 5px;
+    z-index: 10000;
+}
+
+.sb-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.sb-button:active {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.sb-button {
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 
 /* ===================================================== */
