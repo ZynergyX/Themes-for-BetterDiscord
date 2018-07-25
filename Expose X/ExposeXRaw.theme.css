@@ -2491,15 +2491,6 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     font-size: 0px;
 }
 
-.need-help-modal.deprecated .header h1::before {
-    content: "Expose X Change Log";
-    color: black !important;
-    font-size: 15px;
-    top: 10px !important;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
 .need-help-modal.deprecated .header input[type=text] {
     visibility: hidden;
 }
