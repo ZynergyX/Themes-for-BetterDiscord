@@ -782,7 +782,7 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     font-weight: 500;
     -webkit-app-region: drag;
     position: fixed;
-    margin-top: 600px;
+    margin-top: 500px;
     margin-left: 100px;
 }
 
@@ -793,7 +793,7 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     font-weight: 500;
     -webkit-app-region: drag;
     position: fixed;
-    margin-top: 560px;
+    margin-top: 460px;
     margin-left: 0px;
 }
 
@@ -2463,14 +2463,10 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     font-size: 0px;
 }
 
-.modal-1UGdnR {
-    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/Expose%20X%20Theme%20for%20Better%20Discord/changelog.png);
-}
-
 .need-help-modal.deprecated .footer {
     -ms-flex: 1;
     -webkit-box-flex: 1;
-    background-color: transparent;
+    background-color: #fff;
     border-radius: 0 0 5px 5px;
     border-top: 0px solid #e9e7e7;
     color: #ffffff;
@@ -2488,7 +2484,7 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 }
 
 .need-help-modal.deprecated .header {
-    background-color: transparent;
+    background-color: #ffffff;
 }
 
 .need-help-modal.deprecated .header h1 {
@@ -2512,6 +2508,10 @@ g.iconForeground-3y9f0B.da-iconForeground {
 
 .icon-1R19_H[name="QuestionMark"] path{display: none;}
 
+.form-inner.loading.da-formInner.da-loading {
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/Expose%20X%20Theme%20for%20Better%20Discord/changelog.png);
+    background-size: 895px;
+}
 
 
 
@@ -3313,4 +3313,3 @@ button#dl-log-button {
 
 /* ===================================================== */
 /*   END OF PLUGINS */
-
