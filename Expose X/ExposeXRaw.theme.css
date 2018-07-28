@@ -782,8 +782,8 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     font-weight: 500;
     -webkit-app-region: drag;
     position: fixed;
-    margin-top: 500px;
-    margin-left: 100px;
+    margin-top: 600px;
+    margin-left: 16px;
 }
 
             .need-help-modal.deprecated .header::before {
@@ -793,7 +793,7 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     font-weight: 500;
     -webkit-app-region: drag;
     position: fixed;
-    margin-top: 460px;
+    margin-top: 560px;
     margin-left: 0px;
 }
 
@@ -2459,14 +2459,33 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     font-size: 0px;
 }
 
+.form-deprecated, .form.deprecated {
+    position: relative;
+    width: 379px;
+}
+
 .need-help-modal.deprecated a {
     font-size: 0px;
+}
+
+.need-help-modal.deprecated .form-inner.loading {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/Expose%20X%20Theme%20for%20Better%20Discord/changelog.png);
+    background-size: 1312px;
+    background-position-x: -458px;
+    background-position-y: -171px;
+    border-radius: 10px;
 }
 
 .need-help-modal.deprecated .footer {
     -ms-flex: 1;
     -webkit-box-flex: 1;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 0 0 5px 5px;
     border-top: 0px solid #e9e7e7;
     color: #ffffff;
@@ -2484,7 +2503,7 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 }
 
 .need-help-modal.deprecated .header {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 .need-help-modal.deprecated .header h1 {
@@ -2508,10 +2527,6 @@ g.iconForeground-3y9f0B.da-iconForeground {
 
 .icon-1R19_H[name="QuestionMark"] path{display: none;}
 
-.form-inner.loading.da-formInner.da-loading {
-    background-image: url(https://raw.githubusercontent.com/CorbsEditor/Custom-Icons/master/Expose%20X%20Theme%20for%20Better%20Discord/changelog.png);
-    background-size: 895px;
-}
 
 
 
@@ -3313,3 +3328,4 @@ button#dl-log-button {
 
 /* ===================================================== */
 /*   END OF PLUGINS */
+
