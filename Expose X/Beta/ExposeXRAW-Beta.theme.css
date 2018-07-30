@@ -1,5 +1,5 @@
 :root {
-    --version: "You're using version 1.0.82 of Expose X";
+    --version: "You're using version 1.0.83 of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
@@ -2448,11 +2448,38 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     border-bottom: 1px solid rgba(54, 57, 63, 0);
 }
 
+/* Minimal Mode Support */
+.bd-minimal .guilds-wrapper .guilds .guild.selected:before {
+    height: 22px !important;
+    margin-top: -20px !important;
+    width: 22px !important;
+}
 
+.bd-minimal .guilds .home-icon {
+    width: 10px !important;
+    height: 10px !important;
+    background-size: 109% !important;
+    font-size: 15px;
+    line-height: 20px;
+}
 
+.bd-minimal .guilds-wrapper .guild-separator {
+    margin-left: -15px !important;
+    margin-bottom: -2px !important;
+}
 
+.bd-minimal .large-3ChYtB {
+    border-radius: 10px !important;
+}
 
+.bd-minimal .theme-dark .content-3dzVd8 {
+    border-left: 0px solid #303030 !important;
+}
 
+.bd-minimal .container-2Thooq .avatar-small .status-oxiHuE {
+    height: 14px !important;
+    width: 13px !important;
+}
 
 /* Expose X Change Log Modal (AKA Help Modal) */
 .need-help-modal.deprecated a:hover {
