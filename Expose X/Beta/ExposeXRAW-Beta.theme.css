@@ -463,8 +463,6 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
     color: #f6f6f7;
 }
 
-
-
 .description-12ntlD.da-description {
     font-size: 0px;
 }
@@ -551,8 +549,6 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
 .carousel-JbsNzL {
     background-color: transparent !important;
 }
-
-
 
 .timestamp-2TSQfJ {
     font-size: 0px;
@@ -1823,6 +1819,25 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     box-shadow: 0 0px 0 rgba(0, 0, 0, 0), 0 0px 0 rgba(0, 0, 0, 0);
 }
 
+.nameConnectedText-3CzNQn, .nameConnectedVoice-MHUX5F, .nameSelectedText-sp_EUw, .nameSelectedVoice-1qSph5 {
+    font-family: var(--fontchannelname);
+}
+
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H {
+    font-family: var(--fontcategoryname) !important;
+}
+
+.nameHoveredText-1uO31y {
+    font-family: var(--fontchannelname);
+}
+
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H:hover {
+    font-family: var(--fontcategoryname) !important;
+}
+
+
+
+
      /* Making round buttons OWO */
 
  .content-20Aix8 {
@@ -1867,6 +1882,14 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 
 /* */
 
+.theme-dark .markup-2BOw-j {
+    color: white;
+    font-family: var(--fontchat);
+}
+
+.theme-dark .username-_4ZSMR {
+    font-family: var(--fontusername);
+}
 
 .theme-dark .chat {
     background-color: rgba(54, 57, 62, 0) !important;
@@ -1908,7 +1931,9 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     background-color: rgba(58, 113, 193, 0) !important;
 }
 
-
+.iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .nameHovered-1gxhWH, .nameHoveredCollapsed-2orEWB {
+    font-family: var(--fontcategoryname) !important;
+}
 
 .theme-dark .chat form {
     -webkit-box-shadow: 0 -1px 0 hsla(0,0%,100%,.06);
@@ -1983,6 +2008,10 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     border-radius: 230px;
     width: 90px;
     height: 40px;
+}
+
+.nameTag-3p0yK-.nameTag-m8r81H.da-nameTag {
+    font-family: var(--fontusername);
 }
 
 /* Profile Modal */
@@ -3057,6 +3086,10 @@ g.iconForeground-3y9f0B.da-iconForeground {
 /* Search Bar */
 .search .search-bar {
     width: 34px;
+}
+
+.search-bar-icon .icon.visible {
+    opacity: 1 !important;
 }
 
 .search .search-bar-icon:active {
