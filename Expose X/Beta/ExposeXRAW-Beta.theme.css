@@ -450,7 +450,24 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
     color: #ffffff;
 }
 
+.theme-dark .splashArt-3yFzRe {
+    width: 728px !important;
+}
 
+.theme-dark .header-1RC2Wb {
+    background-color: rgba(41, 41, 41, 0);
+}
+
+.theme-dark .card-7JP0BX {
+    background-color: rgba(54, 57, 63, 0);
+    color: #f6f6f7;
+}
+
+
+
+.description-12ntlD.da-description {
+    font-size: 0px;
+}
 
 .description-12ntlD {
     color: white;
@@ -515,7 +532,31 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
     transition: all 0.2s ease!important;
 
 }
+.verticalPaginationItemContainer-3buRwR {
+    margin: 0;
+    overflow-y: hidden;
+    margin-left: -235px;
+}
 
+.background-17WUpK {
+    bottom: 0%;
+    background-size: 75% !important;
+    background-position: left !important;
+}
+
+.article-FleDq5 {
+    background-color: transparent !important;
+}
+
+.carousel-JbsNzL {
+    background-color: transparent !important;
+}
+
+
+
+.timestamp-2TSQfJ {
+    font-size: 0px;
+}
 
 .selectedPage-2JQS2s:before {
     -webkit-transform: translateY(-50%) translateX(0);
@@ -525,11 +566,6 @@ a.anchor-3Z-8Bb.bodyLink-3A8Buv.activityName-1IaRLn.da-anchor.da-bodyLink.da-act
     margin-left: -9px;
     transition: all 0.2s ease!important;
 
-}
-
-.paginationGameName-3Fd-qy, .paginationTitle-1XtEga {
-    font-weight: 600;
-    left: 10px;
 }
 
 .theme-dark .body-1SVoBw {
@@ -1962,7 +1998,16 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
     width: 250px;
 }
 
+.theme-dark .quickMessage-1yeL4E {
+    background-color: #36393f;
+    border-color: rgba(35, 38, 42, 0);
+    color: hsla(0,0%,100%,.7);
+    border-radius: 50px;
+}
 
+.role-2irmRk {
+    border: 0px solid !important;
+}
 
 .lookInverted-2D7oAl.colorGreen-29iAKY:hover {
     color: white;
@@ -2479,6 +2524,10 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 .bd-minimal .container-2Thooq .avatar-small .status-oxiHuE {
     height: 14px !important;
     width: 13px !important;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild {
+    height: 15px !important;
 }
 
 /* Expose X Change Log Modal (AKA Help Modal) */
@@ -3036,10 +3085,20 @@ g.iconForeground-3y9f0B.da-iconForeground {
 
 /* File in chat */
 
+.noArrow-3BYQ0Z.noShadow-321ZPm.popout-3sVMXz.popoutTopLeft-b5Eb3O.popouttop-left.da-noArrow.da-noShadow.da-popout.da-popoutTopLeft.da-popouttopLeft {
+    left: 208px !important;
+    top: 1120px !important;
+}
+
 .theme-dark .attachment-33OFj0 {
     border: none;
     background-color: transparent;
 
+}
+
+.attachPopout-1n-ZKM.da-attachPopout {
+    margin-left: -240px;
+    margin-bottom: -100px;
 }
 
 /* Settings */
