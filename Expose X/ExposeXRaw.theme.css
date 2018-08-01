@@ -1,5 +1,5 @@
 :root {
-    --version: "You're using version 1.0.83 of Expose X";
+    --version: "You're using version 1.0.83b of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
@@ -1397,257 +1397,76 @@ background-position: center !important;
 }
 
 /* Server List */
-
-    /* create or join server button */
-    .guilds-wrapper .guilds-add:hover {
-        border-color: var(--accentcolor);
-        color: var(--accenttext);
-        background-color: transparent;
-    }
-
-    .guilds-wrapper .guilds-add {
-        border-color: var(--accentcolor);
-        color: var(--accenttext);
-        background-color: transparent;
-        border: 0.1px dotted;
-        font-weight: 10 !important;
-    }
-
-    /**/
-
-.guilds-wrapper {
-    -ms-flex-direction: column;
-    -ms-flex-negative: 0;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    background-color: transparent !important;
-    contain: layout;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    overflow: hidden;
-    position: relative;
-    width: 100px;
-    left: 18px;
-    top: -8px;
-}
-
-.guilds-wrapper .guilds {
-    overflow-x: hidden;
-    overflow-y: show;
-}
-
-.guilds-wrapper .guild-separator:after {
-    background: rgba(47, 49, 54, 0);
-    content: " ";
-    height: 2px;
-    left: 20%;
-    position: absolute;
-    right: 20%;
-    top: 0;
-}
-
-.guilds-wrapper .guilds .guild .guild-inner {
-    background: rgba(47, 49, 54, 0);
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 50px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.guilds-wrapper .guilds .friends-online {
-    font-size: 0px;
-    margin: -1px 0;
-}
-
-.guilds-wrapper .guilds .guild .guild-inner a:active {
-    transform: scale(0.9);
-    transition: all 0.2s ease!important;
-    border-radius: 50px;
-}
-.guilds-wrapper .guilds .guild.selected {
-    border-radius: 50px!important;
-    animation: guildborder 10s ease;
-    transform: scale(1.08);
-}
-
-.guilds-wrapper .guilds .guild+.guild {
-    display: block;
-    transition: all 0.2s cubic-bezier(0, 1.17, 0.99, 0.06) !important;
-}
-
-.guilds-wrapper .guilds .guild .guild-inner {
-    background: transparent;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 50px;
-    overflow: hidden;
-    text-align: center;
-
-
-}
-
-.guilds-wrapper .guilds .guild.selected:before {
-    -webkit-transition: height .25s ease-in-out,margin-top .25s ease-in-out;
-    background: #fff;
-    border-radius: 70px;
-    height: 55px;
-    margin-top: -20px;
-    transition: height .25s ease-in-out,margin-top .25s ease-in-out;
-}
-
-
-
-.guilds-wrapper .guilds .guild .avatar-small {
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    border-radius: 50px;
-    height: 50px;
-    margin: 0;
-    width: 50px;
-
-
-}
-
-.guilds-wrapper .guilds .guild:hover {
-    border-radius: 3px!important;
-    animation: guildborder 10s ease;
-}
-.guilds-wrapper .guilds .guild.selected {
-    border-radius: 3px!important;
-    animation: guildborder 10s ease;
-}
-
-
-.scroller-wrap .scroller::-webkit-scrollbar-thumb, .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-    background-clip: padding-box;
-    color: #7289da;
-    background-color: transparent;
-    border: 5px solid transparent;
-    border-radius: 7px;
-}
-
-.guilds-wrapper .guilds .guild-icon {
-    border-radius: 50px;
-}
-
-    /* Indicator */
-
-    .guilds-wrapper .guilds .guild.selected:before, .guilds-wrapper .guilds .guild.unread:before {
-        border-radius: 50px;
-        content: " ";
-        left: -1px;
-        margin-top: -20px;
-        position: absolute;
-        top: 19px;
-        width: 52px;
-        height: 52px;
-        background: var(--accentcolor) !important;
-    }
-    
-    .guilds-wrapper .guilds .guild.unread:before {
-        background-color: white !important;
+    /* Making Background Transparent */
+    .theme-dark .guildsWrapper-5TJh6A {
+        background-color: rgba(32, 34, 37, 0);
     }
 
     /* Home Icon */
-
-    .guild-inner.da-guildInner {
-        background-color: transparent !important;
+    .theme-dark .homeIcon-1FoKUJ {
+        color: rgba(255, 255, 255, 0);
     }
 
-    .guilds-wrapper .guilds .home-icon {
-        background-image: url(https://i.imgur.com/lPF4z01.png);
-        background-position: 50%;
+    .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
+        background: rgba(47, 49, 54, 0);
+    }
+
+    .theme-dark .homeIcon-1FoKUJ {
+        background-image: url(https://cdn.discordapp.com/attachments/463532696820383754/463532891062927360/lPF4z01.png);
+        background-size: 40px;
+        border-radius: 0px !important;
         background-repeat: no-repeat;
-        background-size: 32px 33px;
-        height: 50px;
-        width: 50px;
-        background-color: transparent !important;
-        z-index: 10;
-        color: transparent !important;
+        background-position: 10px;
+        background-position-x: 7px
     }
 
-    svg.home-icon.da-homeIcon {
-        background-color: transparent !important;
+    /* How many online boi? */
+    .friendsOnline-_wi_fM {
+        font-size: 0px;
     }
 
+    .iconInactive-98JN5i {
+        border-radius: 50px !important;
+    }
 
+    /* Unread  Server */
 
-    a {
-        -webkit-transition: opacity .5s,color .5s;
-        color: rgba(0, 176, 244, 0);
-        cursor: pointer;
-        text-decoration: none;
-        transition: opacity .5s,color .5s;
+    .guild-1EfMGQ.unread-qLkInr:before {
+        border-radius: 5px;
+        height: 10px;
+        margin-top: -20px;
+    }
+
+    /* Selected Server */
+    
+    .guild-1EfMGQ.selected-ML3OIq:before, .guild-1EfMGQ.unread-qLkInr:before {
+        border-radius: 50px !important;
+        content: " ";
+        height: 54px !important;
+        left: -2px;
+        margin-top: -20px;
+        position: absolute;
+        top: 36%;
+        width: 54px;
     }
 
     /* Voice Icon */
-
-    .guilds-wrapper .guilds .guild.audio .guild-inner:after, .guilds-wrapper .guilds .guild.video .guild-inner:after {
-        background-color: rgba(30, 33, 36, 0.71);
+    .guild-1EfMGQ.audio-3vVhBi .guildInner-3DSoA4:after, .guild-1EfMGQ.video-15yGu3 .guildInner-3DSoA4:after {
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: 16px;
-        border-radius: 112px;
+        border-radius: 52px;
         content: " ";
-        height: 53px;
+        height: 50px;
         overflow: hidden;
         pointer-events: none;
         position: absolute;
-        right: -1px;
-        top: -1px;
-        width: 53px;
-    }
-
-    .unread-mentions-indicator-bottom, .unread-mentions-indicator-top {
-        height: 20px;
-        left: 0;
-        overflow: hidden;
-        padding: 6px;
-        pointer-events: none;
-        position: absolute;
-        right: 0;
-        z-index: 10;
-        width: 60px;
-    }
-
-    .unread-mentions-indicator-bottom .unread-mentions-bar, .unread-mentions-indicator-top .unread-mentions-bar {
-        -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.6);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
-    }
-
-
-
-    /* Mention Badge on Server Icon */
-
-    .guilds-wrapper .guilds .guild .badge {
-        bottom: -2px;
-        pointer-events: none;
-        position: absolute;
-        right: -2px;
-        height: 44px;
+        right: 0px;
         top: 0px;
-        left: 0px;
-        border-radius: 50px;
-        width: 38px;
+        width: 50px;
+        opacity: 0.9;
     }
 
-    .guilds-wrapper .guilds .guild .badge:hover {
-        animation: guildborder 10s ease;
-        transform: scale(1.08);
-    }
-
-    .badge {
-        background-color: var(--accentcolor);
-        font-size: 32px;
-        line-height: 34px;
-        opacity: 0.8;
-    }
 
 
 /* Create or Join guild */
