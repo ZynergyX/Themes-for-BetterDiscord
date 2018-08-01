@@ -1413,12 +1413,22 @@ background-position: center !important;
 
     .theme-dark .homeIcon-1FoKUJ {
         background-image: url(https://cdn.discordapp.com/attachments/463532696820383754/463532891062927360/lPF4z01.png);
-        background-size: 40px;
+        background-size: 34px !important;
         border-radius: 0px !important;
-        background-repeat: no-repeat;
-        background-position: 10px;
-        background-position-x: 7px
+        background-repeat: no-repeat !important;
+        background-position: 10px !important;
+        background-position-x: 8.5px !important;
     }
+
+    .guildInner-3DSoA4.da-guildInner {
+        background-color: transparent !important;
+    }
+
+    .theme-dark .guild-1EfMGQ.selected-ML3OIq:before {
+        background: rgba(255, 255, 255, 0);
+    }
+
+
 
     /* How many online boi? */
     .friendsOnline-_wi_fM {
@@ -2904,10 +2914,11 @@ g.iconForeground-3y9f0B.da-iconForeground {
 
 /* Search Bar */
 .search .search-bar {
-    width: 34px;
+    width: 25px;
+    margin-left: 10px;
 }
 
-.search-bar-icon .icon.visible {
+.theme-dark .search .iconSearchBarEyeGlass-2n38zb {
     opacity: 1 !important;
 }
 
