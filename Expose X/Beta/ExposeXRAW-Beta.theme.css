@@ -1703,6 +1703,13 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
             height: 76px;
         }
 
+        .channelTextArea-rNsIhG {
+            margin-bottom: 16px;
+            padding-top: 20px;
+        }
+
+
+
         /* Rest of Chat */
 
         .iconInactive-g2AXfB {
@@ -1786,7 +1793,7 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 
 .typing-2GQL18 {
     background-color: transparent !important;
-    margin-bottom: 45px;
+    margin-bottom: 52px !important; 
 }
 
 .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
