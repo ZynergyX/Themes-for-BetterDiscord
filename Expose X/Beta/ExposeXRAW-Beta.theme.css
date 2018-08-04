@@ -1,5 +1,5 @@
 :root {
-    --version: "You're using version 1.0.83b of Expose X";
+    --version: "You're using version 1.0.83c of Expose X";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
@@ -905,6 +905,16 @@ button.button-1VQp89.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMediu
     border-color: rgba(54, 57, 62, 0);
 }
 
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-track-piece {
+    background-color: rgba(47, 49, 54, 0);
+    border-color: rgba(54, 57, 63, 0);
+}
+
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-thumb {
+    background-color: rgba(32, 34, 37, 0);
+    border-color: rgba(54, 57, 63, 0);
+}
+
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
     background-color: transparent;
     visibility: hidden;
@@ -1777,6 +1787,14 @@ svg.colorHoveredText-OZnAgu.icon-sxakjD {
 .typing-2GQL18 {
     background-color: transparent !important;
     margin-bottom: 45px;
+}
+
+.theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
+    background-color: rgba(54, 57, 63, 0);
+}
+
+.theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY {
+    background: rgba(0,0,0,0);
 }
 
 /* Members Tab */
