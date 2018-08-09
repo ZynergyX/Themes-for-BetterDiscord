@@ -1,7 +1,24 @@
 :root {
-    --version: "You're using version 1.0.9 of Expose X";
+    --version: "Expose X v1.0.9";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
+}
+
+.app::before {
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    font-size: 13px;
+    content: var(--version);
+    color: var(--accenttext);
+    opacity: 0.85;
+    border-radius: 50px;
+    padding: 7px;
+    z-index: 10;
+}
+
+.title-3qD0b-, .titleCall-_b9o8P {
+    padding: 0 118px 0 12px;
 }
 
 /* To remove lines and seperators in Discord */
@@ -217,6 +234,25 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         color: #ffffff;
     }
 
+    /* Someone is typing modal */
+    .theme-dark .typing-2GQL18 {
+        background-color: rgba(54, 57, 63, 0);
+    }
+
+    .theme-dark .typing-2GQL18 span {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .stop-animation .spinner-pulsing-ellipsis .spinner-item {
+        visibility: hidden;
+    }
+
+    .typing-2GQL18 {
+        left: 26px;
+    }
+
+
+
     /* Reactions */
     .theme-dark .reaction.reaction-me {
         background: rgba(92, 106, 158, 0);
@@ -275,6 +311,53 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     .nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {
         color: rgba(255, 255, 255, 0.61);
     }
+
+/* Container in bottom left */
+    /* Changing height */
+    .container-2Thooq {
+        height: 100px;
+    }
+
+/* Search Bar */
+.search-bar.da-searchBar {
+    width: 20px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    margin-right: 80px;
+    margin-left: -125px;
+    opacity: 1 !important;
+    transition: 1000ms ease;
+}
+
+.search-bar.da-searchBar:hover {
+    width: 240px !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    margin-right: 80px;
+    margin-left: -350px;
+    transition: 1000ms ease;
+}
+
+.search.focused .search-bar, .search.open .search-bar, .search.popout-open .search-bar {
+    width: 314px !important;
+    background-color: rgba(0, 0, 0, 0.32) !important;
+    margin-right: 80px;
+    margin-left: -440px;
+    transition: 1000ms ease;
+}
+
+.theme-dark .search .search-bar .search-bar-icon .icon.icon-search-bar-eye-glass{
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.searchPopout-1vUlP3 {
+    margin-left: -425px;
+}
+
+.divider-2PMBlV {
+    height: 22px;
+    margin: 0 -3px;
+    width: 1px;
+}
 
 /* Server List */
     /* Making Selected Server Icon Round */
