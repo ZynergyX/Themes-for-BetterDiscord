@@ -1,20 +1,20 @@
 :root {
-    --version: "";
+    --version: "1.0.9";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
-    --news: "Expose X has been updated with faster performance"; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
+    --news: "You're using Beta!"; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
 /* for Expose X news | news for Expose X is rare so don't worry about it */
 .app::before {
     content: var(--news);
     color: white;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     -webkit-app-region: drag;
     position: fixed;
     z-index: 10000;
     bottom: 4px;
     background-color: transparent;
-    left: 75px;
+    left: 120px;
     padding: 7px;
     border-radius: 50px;
 }
@@ -229,6 +229,10 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     background-repeat: no-repeat !important;
     background-position: center !important;
     }
+/* Making buttons round */
+.theme-dark .side-8zPYf6 .itemDefault-3Jdr52:hover, .theme-dark .side-8zPYf6 .itemHover-EnbcjT:hover {
+    border-radius: 50px;
+}
 
 /* Windows Title bar */
 .typeWindows-1za-n7 {
@@ -282,6 +286,25 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     .theme-dark .inner-zqa7da {
         background-color: hsla(218, 5%, 47%, 0);
     }
+    /* Upload Menu */
+        /* Appling accent colors */
+        .theme-dark .attachPopout-1n-ZKM {
+            background-color: var(--accentcolor);
+        }
+        .theme-dark .attachPopoutRowText-1tIocA {
+            color: var(--accenttext) !important;
+            font-size: 0px;
+        }
+        /* Removing background hover effect */
+        .theme-dark .attachPopoutRow-KrE-f6:hover {
+            background-color: rgba(54, 57, 63, 0);
+        }
+        /* Changing Width */
+        .attachPopout-1n-ZKM {
+            min-width: 10px;
+            display: -webkit-box !important;
+        }
+
     /* Image Pop Up */
     .downloadLink-1ywL9o:hover {
         opacity: 1;
@@ -584,6 +607,10 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         border-radius: 100px;
         background-color: rgba(0, 0, 0, .3);
     }
+    .contentConnectedVoice-qL-YrL:active, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM:active {
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 50px;
+    }
     .contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
         background-color: rgba(79,84,92,.6);
         border-radius: 50px;
@@ -879,10 +906,7 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     /* Text */
     .theme-dark .membersGroup-v9BXpm {
         color: hsl(0, 0%, 100%);
-    }
-    .usernameOnline-3jr_0Y {
-        color: white;
-    }
+    }  color: white;
     /* adding radial staus borders - code by Sato and small tweak by Corbs*/
     .statusProfile-3ynqtt.status-oxiHuE {
         width:96% !important;height: 96%;right:-2px !important;bottom:-2px;padding:2px;
@@ -932,6 +956,59 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         .theme-dark .accountBtnInner-sj5jLs {
             border-color: transparent;
             border-radius: 50px;
+        }
+        /* Borders of check mark */
+        .theme-dark .checkbox-1ix_J3 {
+            border-color: rgba(114, 118, 125, 0);
+        }
+        /* Making check marks round */
+        .theme-dark .checked-3_4uQ9 {
+            border-radius: 50px;
+        }
+        /* Borders */
+        .theme-dark .cardPrimaryEditable-3KtE4g {
+            background: rgba(32,34,37,.3);
+            border-color: rgba(32, 34, 37, 0);
+        }
+        .lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+            border-color: hsla(0, 0%, 100%, 0);
+        }
+        .lookOutlined-3sRXeN.colorWhite-rEQuAQ:hover {
+            border-color: hsla(0, 0%, 100%, 0);
+        }
+        .theme-dark .container-1nZlH6 {
+            border-color: rgba(0, 0, 0, 0);
+        }
+        .theme-dark .select-2TCrqx .Select-control:hover {
+            border-color: rgba(4, 4, 5, 0) !important;
+        }
+        .theme-dark .select-2TCrqx .Select-control {
+            border-color: rgba(4, 4, 5, 0);
+        }    
+        .theme-dark .auditLog-3jNbM6 {
+            border-color: rgba(32, 34, 37, 0);
+        }
+        .lookOutlined-3sRXeN.colorRed-1TFJan {
+            border-color: rgba(240, 71, 71, 0);
+        }
+        .lookOutlined-3sRXeN.colorRed-1TFJan:hover {
+            border-color: rgba(240, 71, 71, 0);
+        }
+        .theme-dark .copyInputDefault-21sXtF {
+            border-color: rgba(0, 0, 0, 0);
+        }
+        li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs {
+            border-color: transparent !important;
+        }
+        .theme-dark .card-FDVird:before {
+            background-color: rgba(51, 54, 60, 0.34);
+            border-color: rgba(43, 46, 50, 0);
+        }
+        .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+            border-color: hsla(0, 0%, 100%, 0);
+        }
+        .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover {
+            border-color: hsla(0, 0%, 100%, 0);
         }
     /*=============================================
 =               Status Picker                 =          created by FroztySeven
@@ -1713,6 +1790,7 @@ button#dl-log-button {
     background-color: transparent;
     color: transparent;
     margin-top: -100px;
+    border-top: none;
 }
 .need-help-modal.form.deprecated a {
     visibility: hidden;
