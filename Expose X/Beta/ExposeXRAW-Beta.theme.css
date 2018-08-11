@@ -3,6 +3,27 @@
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: "You're using Beta!"; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
+/* New Billing Menu */
+    /* Making Background Transparent */
+    .theme-dark .paymentPane-3bwJ6A {
+        background-color: rgba(47, 49, 54, 0);
+    }
+    .theme-dark .paymentRow-2e7VM6 {
+        border-bottom: 1px solid rgba(54, 57, 63, 0);
+    }
+    .theme-dark .paginator-166-09 {
+        background: rgba(47, 49, 54, 0);
+    }
+    .theme-dark .payment-xT17Mq {
+        background-color: rgba(47, 49, 54, 0);
+    }
+    .theme-dark .expandedInfo-3kfShd {
+        background-color: rgba(54, 57, 63, 0.47);
+    }
+    .paymentBreakdown-28CAO8 {
+        border-bottom: 1px solid rgba(79, 84, 92, 0);
+    }
+    
 /* for Expose X news | news for Expose X is rare so don't worry about it */
 .app::before {
     content: var(--news);
@@ -28,6 +49,11 @@ g.iconForeground-3y9f0B.da-iconForeground {
     background-position: center;
 }
 .icon-1R19_H[name="QuestionMark"] path{display: none;}
+/* Removing borderes, trump will be upset about this */
+.theme-dark .modal-3HD5ck {
+    box-shadow: 0 0 0 1px rgba(32, 34, 37, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+}
+
 /* To remove lines and seperators in Discord */
 .theme-dark .title-3qD0b- {
     box-shadow: 0 0px 0 rgba(0,0,0,.2), 0 0px 0 rgba(0,0,0,.06);
@@ -164,6 +190,20 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
 .itemGroup-1tL0uz:not(:first-child):not(:empty) {
     border-top-width: 0px;
 }
+/* Well, this is awkward. ERROR SCREEEN D: */
+.themeDark-3Ap_7i .image-3zK3Wt {
+    visibility: hidden;
+}
+.text-NLHgOm h4 {
+    font-size: 0px;
+}
+.text-NLHgOm {
+    margin-bottom: 90px;
+}
+.themeDark-3Ap_7i {
+    background-color: rgba(47, 49, 54, 0.95);
+}
+
 /* Making Background Transparent for custom background options */
 .appMount-3VJmYg {
     background-image: var(--custombackground) !important;
@@ -907,35 +947,6 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     .theme-dark .membersGroup-v9BXpm {
         color: hsl(0, 0%, 100%);
     }  color: white;
-    /* adding radial staus borders - code by Sato and small tweak by Corbs*/
-    .statusProfile-3ynqtt.status-oxiHuE {
-        width:96% !important;height: 96%;right:-2px !important;bottom:-2px;padding:2px;
-        border-width: 2px !important;margin: 0;}
-    .listRow-hutiT_ .status-oxiHuE,.card-7JP0BX .status-oxiHuE {
-        width:91% !important;height: 91%;
-        border-radius: 50%;right: -2px !important;	bottom:-2px;padding:2px;
-        border-width: 2px !important;margin: 0;}
-    .autocompleteRow-2OthDa .status-oxiHuE{
-        width:82% !important;height: 82%;border-radius: 50%;
-        right: -2px !important;	bottom: -2px;padding: 2px;
-        border-width: 2px !important;}
-    .members-1998pB .content-OzHfo4 .status-2s6iDp,.container-2Thooq .status-2kJpnA,
-    .members-1998pB .member-3W1lQa.popout-open .status-2s6iDp,.private-channels .status {
-        border-radius: 50%;background-clip: padding-box;
-        bottom: -1px;right: -1px;height: 28px !important;width: 28px !important;}
-    .maskProfile-1ObLFT,.mask-3OgeRz {-webkit-mask: none;mask: none;}
-    .status-oxiHuE,.statusProfile-3ynqtt.status-oxiHuE {border-radius:50% !important;box-shadow:none;-webkit-box-shadow:none;}
-    .autocompleteRow-2OthDa .online-2S838R,.listRow-hutiT_ .online-2S838R,.card-7JP0BX .online-2S838R,.statusProfile-3ynqtt.online-2S838R,.private-channels .online-2S838R, .container-2Thooq .online-2S838R,.members-1998pB .content-OzHfo4 .online-2S838R {background-color: transparent;border:2px solid var(--online) !important;}
-    .autocompleteRow-2OthDa .streaming-2_dnHe,.listRow-hutiT_ .streaming-2_dnHe,.card-7JP0BX .streaming-2_dnHe,.statusProfile-3ynqtt.streaming-2_dnHe,.private-channels .streaming-2_dnHe,.container-2Thooq .streaming-2_dnHe,.members-1998pB .content-OzHfo4 .streaming-2_dnHe {background-color: transparent;border: 2px solid var(--streaming) !important;}
-    .autocompleteRow-2OthDa .dnd-1_xrcq,.listRow-hutiT_ .dnd-1_xrcq,.card-7JP0BX .dnd-1_xrcq,.statusProfile-3ynqtt.dnd-1_xrcq,.private-channels .dnd-1_xrcq,.container-2Thooq .dnd-1_xrcq,.members-1998pB .content-OzHfo4 .dnd-1_xrcq {background-color: transparent;border:2px solid var(--dnd) !important;}
-    .autocompleteRow-2OthDa .idle-3DEnRT,.listRow-hutiT_ .idle-3DEnRT,.card-7JP0BX .idle-3DEnRT,.statusProfile-3ynqtt.idle-3DEnRT,.private-channels .idle-3DEnRT,.container-2Thooq .idle-3DEnRT,.members-1998pB .content-OzHfo4 .idle-3DEnRT {background-color: transparent;border:2px solid var(--idle) !important;}
-    .autocompleteRow-2OthDa .invisible-1kp8Z0,.listRow-hutiT_ .invisible-1kp8Z0,.card-7JP0BX .invisible-1kp8Z0,.statusProfile-3ynqtt.invisible-1kp8Z0,.private-channels .invisible-1kp8Z0,.container-2Thooq .invisible-1kp8Z0,.members-1998pB .content-OzHfo4 .invisible-1kp8Z0{background-color: transparent;border:2px solid var(--offline) !important;}
-    .autocompleteRow-2OthDa .offline-3qoTek,.listRow-hutiT_ .offline-3qoTek,.card-7JP0BX .offline-3qoTek,.statusProfile-3ynqtt.offline-3qoTek,.private-channels .offline-3qoTek,.container-2Thooq .offline-3qoTek,.members-1998pB .content-OzHfo4 .offline-3qoTek {background-color: transparent;border:2px solid var(--offline) !important;}
-    .container-2Thooq .status-2kJpnA,.statusProfile-3ynqtt.status-oxiHuE {pointer-events: none !important;}
-    .status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status-2s6iDp,.status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status {left:-1px !important;background-color: rgba(0, 0, 0, 0.4) !important;right: -0.5px !important;}
-    .pulsingEllipsisItem-32hhWL {opacity: .9}
-    .theme-dark .title-3qD0b- .status-oxiHuE,.friends-column-status .status,.titleCall-_b9o8P .status-oxiHuE {position:relative}
-/* Settings */
         /* Backgrounds */
         .theme-dark .ui-standard-sidebar-view .sidebar-region {
             background: rgba(47, 49, 54, 0);
