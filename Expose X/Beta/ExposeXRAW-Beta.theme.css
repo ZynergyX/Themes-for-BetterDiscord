@@ -1,7 +1,7 @@
 :root {
     --version: "1.0.9";
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
-    --news: "You're using Beta!"; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
+    --news: "v1.0.9 is almost done!"; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
 /* New Billing Menu */
     /* Making Background Transparent */
@@ -23,7 +23,15 @@
     .paymentBreakdown-28CAO8 {
         border-bottom: 1px solid rgba(79, 84, 92, 0);
     }
-    
+/* Library Tab */
+  /* Making background transparent */
+  .theme-dark .gameLibrary-TTDw4Y {
+    background-color: rgba(54, 57, 63, 0);
+  }
+/* Fixing Sidebar */
+.theme-dark .ui-standard-sidebar-view .sidebar-region {
+    background: rgba(47, 49, 54, 0);
+}
 /* for Expose X news | news for Expose X is rare so don't worry about it */
 .app::before {
     content: var(--news);
@@ -49,9 +57,18 @@ g.iconForeground-3y9f0B.da-iconForeground {
     background-position: center;
 }
 .icon-1R19_H[name="QuestionMark"] path{display: none;}
-/* Removing borderes, trump will be upset about this */
+/* Removing borders, trump will be upset about this */
 .theme-dark .modal-3HD5ck {
     box-shadow: 0 0 0 1px rgba(32, 34, 37, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+}
+.theme-dark .cardPrimary-1Hv-to {
+    border-color: rgba(32, 34, 37, 0);
+}
+.theme-dark .preview-yX6Nx7 {
+    border-color: rgba(32, 34, 37, 0);
+}
+#pubslayer input {
+    border-color: rgba(0, 0, 0, 0);
 }
 
 /* To remove lines and seperators in Discord */
@@ -161,7 +178,7 @@ g.iconForeground-3y9f0B.da-iconForeground {
     border-top: 0px;
 }
 li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
-    border-color: transparent; 
+    border-color: transparent;
 }
 .lookOutlined-3sRXeN.colorWhite-rEQuAQ:disabled {
     border-color: hsla(0, 0%, 100%, 0);
@@ -261,7 +278,7 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     opacity: 1px !important;
 }
 .app-19_DXt {
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(0, 0, 0, 0.75);
 }
 /* Fixing background issues */
 .appMount-3VJmYg {
@@ -381,32 +398,40 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         flex: 1;
         font-size: 14px;
         transition: all 0.2s ease!important;
-    }   
+    }
     /* Search Bar */
-    .theme-dark .search .search-bar {
-        background-color: hsla(0, 0%, 100%, 0);
-        transition: all 0.2s ease!important;
-    }
-    .search .search-bar {
-        width: 29px;
-        transition: all 0.2s ease!important;
-        margin-left: -136px;
-    }
-    .search .search-bar:hover {
-        width: 80px;
-        margin-left: -185px;
-        transition: all 0.2s ease!important;
-    }
-    .search.focused .search-bar, .search.open .search-bar, .search.popout-open .search-bar {
-        width: 304px !important;
-        margin-left: -500px !important;
-        transition: all 1s ease!important;
-        background-color: rgba(0, 0, 0, 0.18) !important;
-    }
-    .searchPopout-1vUlP3 {
-        width: 294px;
-        margin-left: -482px;
-    }
+        /* Making it's background transparent */
+        .theme-dark .search .search-bar {
+            background-color: hsla(0, 0%, 100%, 0);
+            border-radius: 50px;
+            transition: 1000ms ease !important;
+        }
+        /* Hover and non hover */
+        .search .search-bar {
+            width: 30px;
+            border-radius: 50px;
+            transition: 1000ms ease !important;
+        }
+        .search .search-bar:hover {
+            width: 90px;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+            transition: 1000ms ease !important;
+        }
+        /* Active and blocking all other elements */
+        .search.focused .search-bar, .search.open .search-bar, .search.popout-open .search-bar {
+            width: 575px !important;
+            background-color: var(--accentcolor) !important;
+            margin-left: -290px;
+            margin-right: 0px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            transition: 1500ms ease !important;
+        }
+        .search .DraftEditor-root .public-DraftStyleDefault-block {
+            color: var(--accenttext) !important;
+        }
     /* Date picker in search */
     .theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw {
         border-top: 1px solid rgba(24, 25, 28, 0);
@@ -432,37 +457,38 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         border-color: rgba(24, 25, 28, 0);
     }
     /* Searchbar results */
-    .search-results-wrap {
-        width: 585px;
+    .theme-dark .search-results-wrap {
+        width: 585px !important;
+    }
+    .theme-dark .search-results-wrap {
+        background-color: rgba(47, 49, 54, 0);
+    }
+    .theme-dark .search-results-wrap .search-result:before {
+        background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(47,49,54,0)),to(rgba(47, 49, 54, 0)));
+        background-image: linear-gradient(0deg,rgba(47,49,54,0),rgba(47, 49, 54, 0));
     }
     .theme-dark .search-results-wrap .search-header {
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,20%);
         background-color: rgba(47, 49, 54, 0);
-        box-shadow: 0 0px 0 rgba(0,0,0,0);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
     }
     .theme-dark .search-results-wrap .channel-separator:before {
         border-color: hsla(0, 0%, 100%, 0);
     }
-    .theme-dark .search-results-wrap .search-header .tab.selected, .theme-dark .search-results-wrap .search-header .tab:hover {
-        border-bottom: 2px solid rgba(255, 255, 255, 0);
-    }
     .theme-dark .search-results-wrap .channel-separator .channel-name {
         background-color: rgba(47, 49, 54, 0);
     }
-    .theme-dark .search-results-wrap .search-result:before {
-        background-image: linear-gradient(0deg,rgba(47,49,54,0),rgba(47, 49, 54, 0));
-    }
     .theme-dark .search-results-wrap .search-result:after {
-         background-image: linear-gradient(180deg,rgba(47,49,54,0),rgba(47, 49, 54, 0));
+        background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(47,49,54,0)),to(rgba(47, 49, 54, 0)));
+        background-image: linear-gradient(180deg,rgba(47,49,54,0),rgba(47, 49, 54, 0));
     }
     .theme-dark .search-results-wrap .search-result .search-result-message.hit {
         border: 2px solid rgba(28, 36, 43, 0);
     }
     .theme-dark .search-results-wrap .search-result .hit {
-        background-color: rgba(54, 57, 63, 0.62);
-        box-shadow: 0 0 0px 0px #2f3136;
-    }
-    .theme-dark .search-results-wrap .search-result.expanded {
-        border: 2px solid rgba(28, 36, 43, 0);
+        -webkit-box-shadow: 0 0 10px 6px rgba(47, 49, 54, 0);
+        background-color: rgba(54, 57, 63, 0.55);
+        box-shadow: 0 0 10px 6px rgba(47, 49, 54, 0);
     }
     /* Emojis */
     .bda-dark .emoji-picker, .bda-dark .emojiPicker-3m1S-j {
@@ -671,7 +697,7 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     }
     .actionIcon-2Hi9ZG {
         transition: 1000ms ease !important;
-    }   
+    }
     /* Category Title */
     .iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H {
         color: rgb(255, 255, 255);
@@ -692,6 +718,10 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     /* Changing height */
     .container-2Thooq {
         height: 100px;
+    }
+    /* Making hover effect background round */
+    .button-2b6hmh:hover {
+    border-radius: 50px;
     }
 /* You won't miss him */
 
@@ -715,22 +745,73 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     height: 0px;
 }
 /* Server List */
+    /* Making Background Transparent */
+    .theme-dark .guildsWrapper-5TJh6A {
+        background-color: rgba(32, 34, 37, 0);
+    }
     /* Home Icon */
-    .guildInner-3DSoA4 {
-    background-color: transparent !important;
+    .theme-dark .homeIcon-1FoKUJ {
+        color: rgba(255, 255, 255, 0);
     }
-    /* NEW */
-    .mention-1f5kbO {
-        background-color: rgba(240,71,71,.9);
-        border-radius: 50px;
+    .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
+        background: rgba(47, 49, 54, 0);
     }
-    /* Making Selected Server Icon Round */
-    .guild-1EfMGQ .guildInner-3DSoA4 {
+    .theme-dark .homeIcon-1FoKUJ {
+        background-image: url(https://cdn.discordapp.com/attachments/463532696820383754/463532891062927360/lPF4z01.png);
+        background-size: 34px !important;
+        border-radius: 0px !important;
+        background-repeat: no-repeat !important;
+        background-position: 10px !important;
+        background-position-x: 8.5px !important;
+    }
+    .guildInner-3DSoA4.da-guildInner {
+        background-color: transparent !important;
+    }
+    .theme-dark .guild-1EfMGQ.selected-ML3OIq:before {
+        background: var(--accentcolor);
+    }
+    /* How many online boi? */
+    .friendsOnline-_wi_fM {
+        font-size: 10px;
+         color: white !important;
+         opacity: 1 !important;
+    }
+    .iconInactive-98JN5i {
         border-radius: 50px !important;
     }
-    /* Amount of Friends Online */
-    .theme-dark .friendsOnline-_wi_fM, .theme-light .friendsOnline-_wi_fM {
-        color: hsl(0, 0%, 100%);
+    /* Unread  Server */
+    .guild-1EfMGQ.unread-qLkInr:before {
+        border-radius: 5px;
+        height: 10px;
+        margin-top: -20px;
+    }
+    /* Selected Server */
+    .guild-1EfMGQ.selected-ML3OIq:before, .guild-1EfMGQ.unread-qLkInr:before {
+        border-radius: 50px !important;
+        content: " ";
+        height: 54px !important;
+        left: -2px;
+        margin-top: -20px;
+        position: absolute;
+        top: 36%;
+        width: 54px;
+    }
+
+    /* Voice Icon */
+    .guild-1EfMGQ.audio-3vVhBi .guildInner-3DSoA4:after, .guild-1EfMGQ.video-15yGu3 .guildInner-3DSoA4:after {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        border-radius: 52px;
+        content: " ";
+        height: 50px;
+        overflow: hidden;
+        pointer-events: none;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50px;
+        opacity: 0.9;
     }
 /* Profile Modal */
     /* Background */
@@ -929,6 +1010,36 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     border-radius: 30px;
 }
 /* Members List */
+    /* adding radial staus borders - code by Sato and small tweak by Corbs*/
+
+    .statusProfile-3ynqtt.status-oxiHuE {
+        width:96% !important;height: 96%;right:-2px !important;bottom:-2px;padding:2px;
+        border-width: 2px !important;margin: 0;}
+    .listRow-hutiT_ .status-oxiHuE,.card-7JP0BX .status-oxiHuE {
+        width:91% !important;height: 91%;
+        border-radius: 50%;right: -2px !important;	bottom:-2px;padding:2px;
+        border-width: 2px !important;margin: 0;}
+    .autocompleteRow-2OthDa .status-oxiHuE{
+        width:82% !important;height: 82%;border-radius: 50%;
+        right: -2px !important;	bottom: -2px;padding: 2px;
+        border-width: 2px !important;}
+    .members-1998pB .content-OzHfo4 .status-2s6iDp,.container-2Thooq .status-2kJpnA,
+    .members-1998pB .member-3W1lQa.popout-open .status-2s6iDp,.private-channels .status {
+        border-radius: 50%;background-clip: padding-box;
+        bottom: -1px;right: -1px;height: 28px !important;width: 28px !important;}
+    .maskProfile-1ObLFT,.mask-3OgeRz {-webkit-mask: none;mask: none;}
+    .status-oxiHuE,.statusProfile-3ynqtt.status-oxiHuE {border-radius:50% !important;box-shadow:none;-webkit-box-shadow:none;}
+    .autocompleteRow-2OthDa .online-2S838R,.listRow-hutiT_ .online-2S838R,.card-7JP0BX .online-2S838R,.statusProfile-3ynqtt.online-2S838R,.private-channels .online-2S838R, .container-2Thooq .online-2S838R,.members-1998pB .content-OzHfo4 .online-2S838R {background-color: transparent;border:2px solid var(--online) !important;}
+    .autocompleteRow-2OthDa .streaming-2_dnHe,.listRow-hutiT_ .streaming-2_dnHe,.card-7JP0BX .streaming-2_dnHe,.statusProfile-3ynqtt.streaming-2_dnHe,.private-channels .streaming-2_dnHe,.container-2Thooq .streaming-2_dnHe,.members-1998pB .content-OzHfo4 .streaming-2_dnHe {background-color: transparent;border: 2px solid var(--streaming) !important;}
+    .autocompleteRow-2OthDa .dnd-1_xrcq,.listRow-hutiT_ .dnd-1_xrcq,.card-7JP0BX .dnd-1_xrcq,.statusProfile-3ynqtt.dnd-1_xrcq,.private-channels .dnd-1_xrcq,.container-2Thooq .dnd-1_xrcq,.members-1998pB .content-OzHfo4 .dnd-1_xrcq {background-color: transparent;border:2px solid var(--dnd) !important;}
+    .autocompleteRow-2OthDa .idle-3DEnRT,.listRow-hutiT_ .idle-3DEnRT,.card-7JP0BX .idle-3DEnRT,.statusProfile-3ynqtt.idle-3DEnRT,.private-channels .idle-3DEnRT,.container-2Thooq .idle-3DEnRT,.members-1998pB .content-OzHfo4 .idle-3DEnRT {background-color: transparent;border:2px solid var(--idle) !important;}
+    .autocompleteRow-2OthDa .invisible-1kp8Z0,.listRow-hutiT_ .invisible-1kp8Z0,.card-7JP0BX .invisible-1kp8Z0,.statusProfile-3ynqtt.invisible-1kp8Z0,.private-channels .invisible-1kp8Z0,.container-2Thooq .invisible-1kp8Z0,.members-1998pB .content-OzHfo4 .invisible-1kp8Z0{background-color: transparent;border:2px solid var(--offline) !important;}
+    .autocompleteRow-2OthDa .offline-3qoTek,.listRow-hutiT_ .offline-3qoTek,.card-7JP0BX .offline-3qoTek,.statusProfile-3ynqtt.offline-3qoTek,.private-channels .offline-3qoTek,.container-2Thooq .offline-3qoTek,.members-1998pB .content-OzHfo4 .offline-3qoTek {background-color: transparent;border:2px solid var(--offline) !important;}
+    .container-2Thooq .status-2kJpnA,.statusProfile-3ynqtt.status-oxiHuE {pointer-events: none !important;}
+    .status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status-2s6iDp,.status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status {left:-1px !important;background-color: rgba(0, 0, 0, 0.4) !important;right: -0.5px !important;}
+    .pulsingEllipsisItem-32hhWL {opacity: .9}
+    .theme-dark .title-3qD0b- .status-oxiHuE,.friends-column-status .status,.titleCall-_b9o8P .status-oxiHuE {position:relative}
+
     /* Making Background hover effect round */
     .theme-dark .member-3W1lQa:hover .content-OzHfo4 {
         background-color: #36393f;
@@ -995,7 +1106,7 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         }
         .theme-dark .select-2TCrqx .Select-control {
             border-color: rgba(4, 4, 5, 0);
-        }    
+        }
         .theme-dark .auditLog-3jNbM6 {
             border-color: rgba(32, 34, 37, 0);
         }
@@ -1254,7 +1365,7 @@ transition: 1000ms ease !important;
 }
 .theme-dark .splashArt-3yFzRe {
     width: 728px !important;
-}     
+}
 .theme-dark .header-1RC2Wb {
     background-color: rgba(41, 41, 41, 0);
 }
@@ -1274,6 +1385,12 @@ transition: 1000ms ease !important;
     margin-top: 8px;
     max-height: 80px;
     overflow: hidden;
+}
+.article-3kb3qm {
+    width: 720px;
+}
+.description-1CCuDd {
+    font-size: 0px;
 }
 .dot-22bIa4 {
     border-radius: 50px;
