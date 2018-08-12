@@ -425,8 +425,8 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
             margin-left: -290px;
             margin-right: 0px;
             position: fixed;
-            top: 10px;
             right: 10px;
+            margin-top: -14px;
             transition: 1500ms ease !important;
         }
         .search .DraftEditor-root .public-DraftStyleDefault-block {
@@ -754,7 +754,7 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         color: rgba(255, 255, 255, 0);
     }
     .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
-        background: rgba(47, 49, 54, 0);
+        background: rgba(47, 49, 54, 0) !important;
     }
     .theme-dark .homeIcon-1FoKUJ {
         background-image: url(https://cdn.discordapp.com/attachments/463532696820383754/463532891062927360/lPF4z01.png);
@@ -768,7 +768,7 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
         background-color: transparent !important;
     }
     .theme-dark .guild-1EfMGQ.selected-ML3OIq:before {
-        background: var(--accentcolor);
+        background: transparent !important;
     }
     /* How many online boi? */
     .friendsOnline-_wi_fM {
@@ -1912,12 +1912,12 @@ button#dl-log-button {
     visibility: hidden;
 }
 .need-help-modal.form.deprecated .footer {
-    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Theme%20for%20Better%20Discord/ChangelogB.png?raw=true);
+    background-image: url(https://cdn.discordapp.com/attachments/478040940649644033/478041114021199872/ChangeLog.png);
     background-size: 500px;
     background-repeat: no-repeat;
     background-color: transparent;
     color: transparent;
-    margin-top: -100px;
+    margin-top: -200px;
     border-top: none;
 }
 .need-help-modal.form.deprecated a {
