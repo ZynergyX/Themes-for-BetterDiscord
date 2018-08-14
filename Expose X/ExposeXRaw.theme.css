@@ -70,7 +70,12 @@ g.iconForeground-3y9f0B.da-iconForeground {
 #pubslayer input {
     border-color: rgba(0, 0, 0, 0);
 }
-
+.item-26Dhrx.marginBottom8-AtZOdT.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.cardPrimaryEditable-3KtE4g.card-3Qj_Yx.da-item.da-horizontal.da-flex.da-directionRow.da-cardPrimaryEditable.da-card {
+    border-color: transparent !important;
+}
+.checkbox-1ix_J3.flexCenter-3_1bcw.flex-1O1GKY.justifyCenter-3D2jYp.alignCenter-1dQNNs.box-mmYMsp.checked-3_4uQ9 {
+    border-color: transparent !important;
+}
 /* To remove lines and seperators in Discord */
 .theme-dark .title-3qD0b- {
     box-shadow: 0 0px 0 rgba(0,0,0,.2), 0 0px 0 rgba(0,0,0,.06);
