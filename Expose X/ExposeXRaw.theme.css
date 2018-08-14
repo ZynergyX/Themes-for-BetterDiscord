@@ -23,6 +23,44 @@
     .paymentBreakdown-28CAO8 {
         border-bottom: 1px solid rgba(79, 84, 92, 0);
     }
+/* Windows Title bar */
+.typeWindows-1za-n7 {
+    height: 28px;
+}
+
+.titleBar-AC4pGV {
+    -webkit-app-region: drag;
+    z-index: 3001;
+    background-color: rgba(0, 0, 0, 0.50) !important;
+    margin-top: 0px !important;
+}
+
+.wordmark-2iDDfm {
+    visibility: hidden;
+}
+
+.winButton-iRh8-Z {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    height: 28px;
+    opacity: .6;
+    pointer-events: auto;
+    position: relative;
+    top: 0px;
+    width: 39px;
+}
+
+.winButtonClose-1HsbF-:hover {
+    background-color: var(--accentcolor);
+}
+
+/* macOS title bar */
+.typeMacOS-3EmCyP {
+    background-color: transparent !important;
+    top: 7px !important;
+    left: 16px !important;
+}
+
 /* Library Tab */
   /* Making background transparent */
   .theme-dark .gameLibrary-TTDw4Y {
