@@ -1,1 +1,5 @@
-
+.app::before {
+  content: "Please move to public version, beta program closed";
+  color: white;
+  padding: 5px;
+}
