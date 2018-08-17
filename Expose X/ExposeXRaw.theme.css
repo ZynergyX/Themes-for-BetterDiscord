@@ -3,7 +3,7 @@
     --otherinfo: "You can see more on the website: http://ExposeX.ml/";
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
-svg.colorDefaultVoice-3wYlhb.icon-sxakjD {
+svg.colorDefaultVoice-3wYlhb.icon-sxakjD , svg.colorHoveredVoice-1kucsK.icon-sxakjD {
     color: white;
     opacity: 1 !important;
 }
