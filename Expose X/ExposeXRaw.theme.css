@@ -4,13 +4,7 @@
     --news: ""; /* I use this to send news to Expose X users, this is to reach out to users who're not in the support server */
 }
 
-.app::before {
-    content: "Expose X v2.0 will be released on September 20th!";
-    color: white;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.50);
-    margin-left: 4px;
-}
+
 
 svg.colorDefaultVoice-3wYlhb.icon-sxakjD , svg.colorHoveredVoice-1kucsK.icon-sxakjD {
     color: white;
