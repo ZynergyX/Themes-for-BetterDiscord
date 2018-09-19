@@ -7,8 +7,10 @@ root: {
 .appMount-3VJmYg {
     background-image: var(--custombackground);
     opacity: 1 !important;
-    background-color: black;
     background-size: cover;
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     animation: 10000ms backgroundstartup ease;
@@ -167,6 +169,13 @@ root: {
 .theme-dark .contentTitle-2tG_sM, .theme-dark .description-11DmNu, .theme-dark .descriptionUsername-J_75O8, .theme-dark .content-Qb0rXO {
     color: var(--accenttext);
 }
+/* Reactions */
+.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
+    background: var(--accentcolor);
+}
+.theme-dark .reaction-1ELvT8.reactionMe-23mbRf .reactionCount-2ddRoS {
+    color: var(--accenttext);
+}
 /* Background */
 .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3, .theme-dark .messagesWrapper-3lZDfY {
     background-color: transparent !important;
@@ -195,6 +204,45 @@ button.button-3To2tQ.height20-mO2eIN.button-38aScr.lookFilled-1Gx00P.colorGreen-
 .theme-dark .channelTextArea-rNsIhG {
     background-color: transparent;
     border-top: 0px transparent;
+}
+/* HA, you message failed to send */
+.isFailed-19WM0A, .isFailed-19WM0A .hljs, .isFailed-19WM0A a, .isFailed-19WM0A code.inline, .theme-dark .isFailed-19WM0A, .theme-light .isFailed-19WM0A {
+    animation: 700ms shake ease;
+}
+@keyframes shake { 
+    0% {
+        transform: translateX(0px);
+    }
+    10% {
+        transform: translateX(20px);
+    }
+    20% {
+        transform: translateX(-20px);
+    }
+    30% {
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    60% {
+        transform: translateX(20px);
+    }
+    70% {
+        transform: translateX(-20px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    90% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 /* Invites */
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:hover {
@@ -752,6 +800,61 @@ svg.homeIcon-1FoKUJ.da-homeIcon {
     color: var(--accenttext);
     border-radius: 50px;
 }
+.wrapper-232cHJ.badge-1GsMF2.da-wrapper.da-badge, .wrapper-232cHJ {
+    animation: 3000ms flashslow ease;
+}
+.theme-dark .isMentioned-N-h9aa {
+    animation: 2000ms flashfast ease;
+}
+@keyframes flashfast {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+}
+@keyframes flashslow {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /* Voice */
 .guild-1EfMGQ.audio-3vVhBi .guildInner-3DSoA4:after, .guild-1EfMGQ.video-15yGu3 .guildInner-3DSoA4:after {
     border-radius: 50px;
@@ -963,6 +1066,7 @@ svg.iconCollapsed-3hFp_8.iconTransition-2pOJ7l.directionRight-O8AY4M, svg.iconHo
     margin-top: -6px;
     top: 50%;
     width: 13px;
+    animation: 1000ms fadein ease;
 }
 svg.colorDefaultVoice-3wYlhb.icon-sxakjD, svg.colorHoveredVoice-1kucsK.icon-sxakjD, svg.colorLockedVoice-2UlBjl.icon-sxakjD.da-colorLockedVoice.da-icon {
     color: white;
@@ -1199,10 +1303,6 @@ svg.colorConnectedVoice-3kyvUN.icon-sxakjD {
 .popout-3sVMXz.popoutTop-3uu9vG-left, .popout-3sVMXz {
     box-shadow: 0 0 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0) !important;
 }
-@keyframes status-picker-bg {
-    to {
-    }
-}
 .menu-Sp6bN1.alt-3btY0e, .menu-Sp6bN1.alt-3btY0e.da-menu.da-alt   {
 background-image: var(--custombackground);
 opacity: 1 !important;
@@ -1211,6 +1311,15 @@ background-size: cover;
 background-repeat: no-repeat !important;
 background-position: center !important;
 transition: 1000ms ease !important;
+animation: 1000ms fadein ease;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .menu-Sp6bN1.alt-3btY0e {
     animation: status-picker-bg 200ms linear;
@@ -1430,7 +1539,7 @@ transition: 1000ms ease !important;
         transform: translateY(-10px);
     }
     100% {
-        opacity: 1;
+        opacity: 0.9;
         transform: translateY(0px);
     }
 }
@@ -1956,25 +2065,38 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.da-role.da-flex.da-alignCenter {
     margin-bottom: 23px;
 }
 .contentBase-11jeVK {
-    color: #72767d;
+    color: #ffffff;
     font-size: 0px;
     font-weight: 500;
     line-height: 16px;
     max-width: 600px;
     text-transform: uppercase;
 }
-.problems-3mgf6w.slideIn-sCvzGz::before {
-    content: "Loading...";
-    margin-top: -340px;
-    margin-bottom: 280px;
-    font-size: 30px;
-    font-family: sans-serif;
-}
 .problems-3mgf6w {
     transition: transform .2s ease-out;
 }
 .container-16j22k {
     background-color: rgba(0, 0, 0, 0.75);
+    animation: 10000ms loading ease;
+}
+@keyframes loading {
+    0% {
+        
+    }
+    100% {
+        
+    }
+}
+video.ready-36e6Vk {
+    animation: 10000ms loading2 ease;
+}
+@keyframes loading2 {
+    0% {
+
+    }
+    100% {
+
+    }
 }
 /* ================================= */
 /* Startup Error BD */
