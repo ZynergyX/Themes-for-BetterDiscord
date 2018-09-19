@@ -1,6 +1,8 @@
-# Themes-for-BetterDiscord
- _________________________
- 
- # Expose X
- ![Expose X Version 107](https://cdn.discordapp.com/attachments/423855408797581313/459514623725404170/New_Preview_107.png)
- 
+Hi there, Xobtye!
+I see you have forked this project of mine that I love!
+But did you do anything with it? It's just sitting here, not a good idea to stop updating a theme for Discord. 
+Discord updates can break them.
+
+Contact: Corbinrj99@gmail.com
+
+          - CorbsEditor
