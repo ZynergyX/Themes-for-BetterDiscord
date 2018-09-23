@@ -1,6 +1,6 @@
 //META{"name":"Expose X","description":"Expose X is a clean theme for Discord. It allows customization like accent colors, custom fonts, color change, and more to come in the future. Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs#0001","version":"AutoUpdate"}*//{}
 root: {
-    --versionnumber: "2.0";
+    --versionnumber: "2.1";
 }
 /* A new fallback system is now in Expose X! If you do not have the custom options, Expose X will fallback to default options */ 
 /* If you want to edit the RAW and customize these default options, look for classes with "Fallback" next to them. */
