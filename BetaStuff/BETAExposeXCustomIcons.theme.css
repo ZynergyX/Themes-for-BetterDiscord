@@ -1,0 +1,88 @@
+/* ============================== Hi ============== */
+/* Expose X Custom Icons */
+/* These icons were created in Adobe XD by Korbs */
+/* =============================================kek */
+
+/* Removing Icons from Header */
+.icon-1R19_H[name="NotificationBell"] path{display: none;}
+.icon-1R19_H[name="NotificationBellOff"] path{display: none;}
+.icon-1R19_H[name="Pin"] path{display: none;}
+.icon-1R19_H[name="People"] path{display: none;}
+.icon-1R19_H[name="Mention"] path{display: none;}
+/* Header */
+.icon-1R19_H[name="Mention"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/YourMentions.png?raw=true);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-1R19_H[name="Pin"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/Pins.png?raw=true);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iconBadge-2dji3k {
+    -webkit-box-shadow: none;
+    background-color: #f04747;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    box-shadow: none;
+    height: 15px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    width: 15px;
+}
+
+.icon-1R19_H[name="People"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/People.png?raw=true);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-1R19_H[name="NotificationBell"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/BellRed.png?raw=true);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-1R19_H[name="NotificationBellOff"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/BellGray.png?raw=true);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Activity Icon */
+[name="Activity"] path{display: none;}
+
+[name="Activity"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/GamePad.png?raw=true);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Link Icon in Profile Modal */
+.connectedAccountOpenIcon-2cNbq5 {
+  background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/Link.png?raw=true);
+  background-size: cover;
+}
+/* Verified Icon */
+[name="Verified"] path{display: none;}
+[name="Verified"] {
+    background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/Verified.png?raw=true);
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* HypeSquard Badges */
+.profileBadgeHypeSquadOnlineHouse1-xN6tES {
+  background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/HyperSquadBravery.png?raw=true);
+}
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+  background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/HyperSquadBrillance.png?raw=true);
+}
+.profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+  background-image: url(https://github.com/CorbsEditor/Custom-Icons/blob/master/Expose%20X%20Custom%20Icons/HyperSquadBalance.png?raw=true);
+}
