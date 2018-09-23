@@ -1,13 +1,13 @@
 //META{"name":"Expose X","description":"Expose X is a clean theme for Discord. It allows customization like accent colors, custom fonts, color change, and more to come in the future. Support Server for Expose X: https://discord.gg/Pdz7jAH.","author":"Corbs#0001","version":"AutoUpdate"}*//{}
 @import url(https://rawgit.com/CorbsEditor/Themes-for-BetterDiscord/master/Expose%20X/ExposeXRaw.theme.css);
 
-:root { 
+:root {
+    /* Background */
+    --custombackground: url(https://i.imgur.com/x6e1rdv.jpg);
+    --blur: blur(10px);
     
-    /* CHANGE BACKGROUND HERE */
-    --custombackground: url(https://cdn.discordapp.com/attachments/430388043594334210/476428710023528468/Ocean_by_Shu_Le.jpg);
-
     /* Accent Colors */
-    --accentcolor: #738bd7;   /* To reset the color back to default, use #738bd7 */
+    --accentcolor: red;   /* To reset the color back to default, use #738bd7 */
     --accenttext: white; /* Use this to change the text colors that are on top of the accentcolor, this is to help make text readable if you're using a bright accent color */
     
     /* Fonts */
@@ -18,10 +18,34 @@
     --fonttooltip: Whitney;
     --fontusername: Whitney;
     
+    /* Font Sizes */
+    --fontchatsize: 15px;
+    --fontcategorynamesize: 12px;
+    --fontrolenamesize: 12px;
+    --fontchannelnamesize: 16px;
+    --fonttooltipsize: 14px;
+    --fontusernamesize: 15px;
+    
     /* Status Colors */
     --online: rgb(71, 191, 71);
     --idle: yellow;
     --dnd: red;
     --offline: grey;
     --streaming: purple;
+    
+    /* Home Icon */
+    --homeicon: url(https://cdn.discordapp.com/attachments/463532696820383754/489649105006493697/TheDWinkyFace.png);
+    --homeiconcolorbg: transparent; /*optional */
+    
+    /* Server Colors */
+    --serverselected: red !important;
+    --serverunread: white !important;
+    
+    /* Avatar Sizes in Chat */
+    --avatar: 40px;
+    
+    /* Transparency of pop up backgrounds */
+    --backgroundpopup: 1; /* 0 for no background or 0.5 or half transparency */
+    
+    /* */
 }
