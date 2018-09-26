@@ -658,7 +658,6 @@ i.icon.icon-search-bar-clear.visible {
     background-size: 23px;
     background-repeat: no-repeat;
     background-position: center;
-    animation: blink-1 0.7s 5s 10 both;
 }
 @keyframes blink-1 {
   0%,
@@ -950,7 +949,7 @@ svg.homeIcon-1FoKUJ.da-homeIcon {
     border-radius: 50px;
 }
 .wrapper-232cHJ.badge-1GsMF2.da-wrapper.da-badge, .wrapper-232cHJ {
-    animation: 3000ms flashslow ease;
+    animation: 3000ms slow ease;
 }
 .theme-dark .isMentioned-N-h9aa {
     animation: 2000ms flashfast ease;
